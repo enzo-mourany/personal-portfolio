@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1,
+h2 {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+body {
+    background: linear-gradient(30deg, #2D3249, #462D49);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------------------  Nav Bar  ------------------------------------------*/
+
+#nav_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#settings {
+    flex: 1;
+}
+
+#menu {
+    flex: 4;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    white-space: nowrap;
+    text-align: center
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+#menu ul li:hover {
+    background-color: white;
+    padding: 9px 25px;
+    border: none;
+    borer-radius: 50px;
+    cursor: pointer;
+}
+
+#menu ul li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#menu ul li a:hover {
+    color: #B9F9F4;
+}
+
+#links {
+    flex: 1;
+}
+
+#intro {
+    display: flex;
+    background-image: url('../public/SVG/svg1prog.svg');
+    flex-direction: row;
+}
+
+#text_intro {
+    background-color: brown;
+}
+
+#text_intro h1 {
+    font-size: 54px;
+}
