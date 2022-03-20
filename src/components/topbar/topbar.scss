@@ -34,4 +34,19 @@
             }
         }
     }
+    .right {
+        display: flex;
+        align-items: center;
+        background-color: green;
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
