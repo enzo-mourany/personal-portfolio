@@ -14,9 +14,9 @@ function App() {
       <Topbar />
       <div className="sections">
         <Intro />
+        <About />
         <Portfolio />
         <Works />
-        <About />
         <Contact />
       </div>
     </div>
