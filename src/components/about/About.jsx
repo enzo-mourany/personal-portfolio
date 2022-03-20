@@ -1,4 +1,4 @@
-import "./testimonials.scss";
+import "./about.scss";
 
 export default function Testimonials() {
     return (
