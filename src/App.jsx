@@ -3,7 +3,7 @@ import React from 'react';
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
+import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 
@@ -16,7 +16,7 @@ function App() {
         <Intro />
         <About />
         <Portfolio />
-        <Works />
+        <Technologies />
         <Contact />
       </div>
     </div>

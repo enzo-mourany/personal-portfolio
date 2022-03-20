@@ -1,4 +1,4 @@
-import "./works.scss";
+import "./technologies.scss";
 
 export default function Works() {
     return (
