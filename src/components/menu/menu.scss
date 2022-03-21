@@ -2,7 +2,7 @@
 .menu {
     width: 300px;
     height: 100vh;
-    background-color: $mainColor;
+    background-color: $secondaryColor;
     position: fixed;
     top: 0;
     right: -300px;
@@ -19,8 +19,8 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 30px;
-        font-weight: 300;
+        font-size: 24px;
+        font-weight: 200;
         color: white;
         width: 60%;
         li {
