@@ -22,7 +22,7 @@ export default function Intro() {
                             Learn More
                         </a>
                     </div>
-                    <div className="downLoadPdf">
+                    <div className="downloadPdf">
                         <a href="#">
                             Download CV
                         </a>
