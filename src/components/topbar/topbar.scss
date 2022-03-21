@@ -16,7 +16,6 @@
         .left {
             display: flex;
             align-items: center;
-            background-color: purple;
             .logo {
                 font-size: 40px;
                 font-weight: 700;
@@ -35,7 +34,7 @@
             }
         }
         .right {
-            .burgerMenu {
+            .hamburger {
                 width: 32px;
                 height: 25px;
                 display: flex;
@@ -54,18 +53,18 @@
     }
     &.active {
         background-color: $mainColor;
-        color: #fff;
-        .burgerMenu {
+        color: white;
+        .hamburger {
             span {
                 &:first-child {
-                    background-color: #fff;
+                    background-color: white;
                     transform: rotate(45deg);
                 }
                 &:nth-child(2) {
                     opacity: 0;
                 }
                 &:last-child {
-                    background-color: #fff;
+                    background-color: white;
                     transform: rotate(-45deg);
                 }
             }

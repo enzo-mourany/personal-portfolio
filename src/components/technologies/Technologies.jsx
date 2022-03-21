@@ -1,8 +1,8 @@
 import "./technologies.scss";
 
-export default function Works() {
+export default function Technologies() {
     return (
-        <div className="works" id="works">
+        <div className="technologies" id="technologies">
 
         </div>
     )
