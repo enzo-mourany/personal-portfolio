@@ -7,44 +7,45 @@
     position: fixed;
     top: 0;
     z-index: 2;
-}
-
-.wrapper {
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .left {
+    .wrapper {
+        padding: 10px 30px;
         display: flex;
         align-items: center;
-        .logo {
-            font-size: 40px;
-            font-weight: 700px;
-            text-decoration: none;
-            color: inherit;
-            margin-right: 40px;
-        }
-        .itemContainer {
+        justify-content: center;
+        .left {
             display: flex;
             align-items: center;
-            margin-left: 30px;
-            .icon {
-                font-size: 18px;
-                margin-right: 5px;
+            background-color: purple;
+            .logo {
+                font-size: 40px;
+                font-weight: 700px;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 40px;
+            }
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                .icon {
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
             }
         }
-    }
-    .right {
-        display: flex;
-        align-items: center;
-        background-color: green;
-        ul {
+        .right {
             display: flex;
-            list-style-type: none;
-            flex-direction: row;
-            li {
-                a {
-                    text-decoration: none;
+            align-items: center;
+            background-color: green;
+            ul {
+                display: flex;
+                list-style-type: none;
+                flex-direction: row;
+                justify-content: space-around;
+                li {
+                    a {
+                        text-decoration: none;
+                    }
                 }
             }
         }

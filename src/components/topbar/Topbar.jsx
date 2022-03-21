@@ -26,7 +26,7 @@ export default function topbar() {
                             <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="technologies">Technologies</a>
+                            <a href="#technologies">Technologies</a>
                         </li>
                         <li>
                             <a href="#portfolio">Portfolio</a>
