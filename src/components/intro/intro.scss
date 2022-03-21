@@ -1,13 +1,19 @@
+                * {
+                    font-weight: 500;
+                }
+                
                 @import "../../global.scss";
                 .intro {
                     background-color: $mainColor;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    .left {
+                        background-color: #fff;
+                    }
                     .right {
                         flex: 0.5;
                         position: relative;
-                        background-color: red;
                         .wrapper {
                             width: 100%;
                             height: 100%;
@@ -15,33 +21,42 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
+                            h2 {
+                                font-size: 40px;
+                            }
                             h1 {
-                                font-size: 50px;
+                                font-size: 80px;
                                 color: #B9F9F4;
+                                margin: 10px 0;
+                            }
+                            h3 {
+                                font-size: 30px;
                             }
                         }
                         .buttons {
                             display: flex;
                             flex-direction: row;
-                            padding-top: 30px;
+                            padding-top: 60px;
                             padding-bottom: 30px;
-                            padding-left: 100px;
+                            padding-left: 50px;
                             .learnMore {
                                 background: linear-gradient(90deg, #B9F9F4, #C6AFFA);
-                                padding: 20px;
+                                padding: 16px;
                                 margin-right: 40px;
-                                border-radius: 25px;
+                                border-radius: 30px;
+                                cursor: pointer;
                             }
                             .downloadPdf {
                                 border-image: linear-gradient(90deg, #B9F9F4, #C6AFFA) 1;
                                 border: solid 3px;
-                                padding: 20px;
+                                padding: 10px;
                                 margin-right: 40px;
-                                border-radius: 25px;
+                                border-radius: 30px;
+                                cursor: pointer;
                             }
                             a {
-                                margin-right: 50px;
-                                margin-left: 50px;
+                                margin-right: 40px;
+                                margin-left: 40px;
                                 text-decoration: none;
                                 font-weight: 500;
                                 font-size: 20px;

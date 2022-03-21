@@ -3,10 +3,7 @@ import "./intro.scss"
 export default function Intro() {
     return (
         <div className="intro" id="intro">
-
-
             <div className="left">
-
             </div>
             <div className="right">
                 <div className="wrapper">
@@ -18,7 +15,7 @@ export default function Intro() {
                 </div>
                 <div className="buttons">
                     <div className="learnMore">
-                        <a href="#portfolio">
+                        <a href="#about">
                             Learn More
                         </a>
                     </div>
@@ -29,6 +26,7 @@ export default function Intro() {
                     </div>
                 </div>
             </div>
+
         </div>
 
     )
