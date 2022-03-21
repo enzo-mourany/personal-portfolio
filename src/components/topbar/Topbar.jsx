@@ -18,23 +18,11 @@ export default function topbar() {
                     </div>
                 </div>
                 <div className="right">
-                    <ul>
-                        <li>
-                            <a href="#intro">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#technologies">Technologies</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                    <div className="burgerMenu">
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
                 </div>
             </div>
         </div>
