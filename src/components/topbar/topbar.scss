@@ -6,7 +6,8 @@
     color: $mainColor;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+    transition: all 1s ease;
     .wrapper {
         padding: 10px 30px;
         display: flex;
@@ -18,7 +19,7 @@
             background-color: purple;
             .logo {
                 font-size: 40px;
-                font-weight: 700px;
+                font-weight: 700;
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
@@ -46,6 +47,7 @@
                     height: 3px;
                     background-color: $mainColor;
                     transform-origin: left;
+                    transition: all 2s ease;
                 }
             }
         }
@@ -64,6 +66,7 @@
                 }
                 &:last-child {
                     background-color: #fff;
+                    transform: rotate(-45deg);
                 }
             }
         }
