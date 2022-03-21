@@ -1,4 +1,8 @@
 @import "../../global.scss";
+* {
+    color: $textColorDarkMode;
+}
+
 .menu {
     width: 300px;
     height: 100vh;
