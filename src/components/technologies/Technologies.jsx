@@ -8,7 +8,7 @@ export default function Technologies() {
                     <h1>Technologies I Use</h1>
                 </div>
                 <div className="blocs">
-                    <div className="frontend">
+                    <div className="container">
                         <h2>Frontend</h2>
                         <ul>
                             <li>
@@ -31,7 +31,7 @@ export default function Technologies() {
                             </li>
                         </ul>
                     </div>
-                    <div className="backend">
+                    <div className="container">
                         <h2>Backend</h2>
                         <ul>
                             <li>
@@ -48,7 +48,7 @@ export default function Technologies() {
                             </li>
                         </ul>
                     </div>
-                    <div className="tools">
+                    <div className="container">
                         <h2>Tools</h2>
                         <ul>
                             <li>

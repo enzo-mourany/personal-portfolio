@@ -1,13 +1,38 @@
+@import "../../global.scss";
 .technologies {
-    background-color: green;
+    background-color: $mainColor;
     .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        .title {
+            padding: 100px;
+        }
         .blocs {
             display: flex;
             justify-content: space-between;
+            .container {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: linear-gradient(90deg, #B9F9F4, #C6AFFA);
+                border-radius: 25px;
+                margin: 40px;
+                h2 {
+                    padding: 30px;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+                ul {
+                    padding: 30px;
+                    li {
+                        margin: 10px;
+                        padding-left: 30px;
+                    }
+                }
+            }
         }
     }
 }
