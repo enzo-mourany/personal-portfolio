@@ -3,7 +3,7 @@
     background-color: $mainColor;
     .wrapper {
         display: flex;
-        justify-content: center;
+        //justify-content: center;
         align-items: center;
         flex-direction: column;
         .title {
@@ -44,7 +44,15 @@
                     }
                 }
             }
-            .container:nth-child(1) {}
+            .container:nth-child(1) {
+                top: -50px;
+            }
+            .container:nth-child(2) {
+                top: -100px;
+            }
+            .container:nth-child(3) {
+                top: -10px;
+            }
         }
     }
 }
