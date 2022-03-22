@@ -1,4 +1,18 @@
 @import "../../global.scss";
 .about {
     background-color: $mainColor;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .left {
+            width: 50%;
+            text-align: justify;
+            text-justify: inter-word;
+            h2 {
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
