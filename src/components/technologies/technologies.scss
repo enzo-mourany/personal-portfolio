@@ -12,6 +12,15 @@
         .blocs {
             display: flex;
             justify-content: space-between;
+            @keyframes animate {
+                0%,
+                100% {
+                    transform: translateY(-40px);
+                }
+                50% {
+                    transform: translateY(40px);
+                }
+            }
             .container {
                 width: 300px;
                 display: flex;
@@ -20,6 +29,8 @@
                 background: linear-gradient(90deg, #B9F9F4, #C6AFFA);
                 border-radius: 25px;
                 margin: 40px;
+                animation: animate 10s linear infinite;
+                animation-delay: calc(-1s * var(--i));
                 h2 {
                     padding: 30px;
                     font-weight: 600;
@@ -33,6 +44,7 @@
                     }
                 }
             }
+            .container:nth-child(1) {}
         }
     }
 }
