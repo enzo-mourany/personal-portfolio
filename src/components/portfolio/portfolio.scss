@@ -1,4 +1,33 @@
 @import "../../global.scss";
 .portfolio {
     background-color: $mainColor;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        .title {
+            margin: 100px;
+            h2 {
+                font-weight: 500;
+            }
+        }
+        .container {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .item {
+                background-color: red;
+                width: 220px;
+                height: 150px;
+                border-radius: 20px;
+                border: 1px solid rgb(240, 239, 239);
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }

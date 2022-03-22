@@ -8,7 +8,10 @@
     top: 0;
     z-index: 3;
     transition: all 1s ease;
+    display: flex;
+    justify-content: center;
     .wrapper {
+        width: 60%;
         margin: 10px 30px !important;
         display: flex;
         align-items: center;
