@@ -20,13 +20,33 @@
             justify-content: center;
             flex-wrap: wrap;
             .item {
-                background-color: red;
                 width: 220px;
                 height: 150px;
                 border-radius: 20px;
                 border: 1px solid rgb(240, 239, 239);
                 align-items: center;
                 justify-content: center;
+                color: #fff;
+                position: relative;
+                transition: all .5s ease;
+                cursor: pointer;
+                h3 {
+                    position: absolute;
+                    font-size: 20px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+                &:cover {
+                    background-color: $mainColor;
+                    img {
+                        opacity: 0.2;
+                        z-index: 0;
+                    }
+                }
             }
         }
     }
