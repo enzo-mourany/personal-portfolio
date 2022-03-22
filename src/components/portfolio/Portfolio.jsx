@@ -10,7 +10,7 @@ export default function Portfolio() {
                 <div className="container">
                     <div className="item">
                         <img
-                            src=""
+                            src="../../../public/PNG/tabata-app.png"
                             alt=""
                         />
                         <h3>Tabata App</h3>
