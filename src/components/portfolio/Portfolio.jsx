@@ -1,5 +1,4 @@
-import "./portfolio.scss"
-import { useState, useEffect } from 'react';
+import "./portfolio.scss";
 import featuredPortfolio from "../../data";
 
 export default function Portfolio() {
