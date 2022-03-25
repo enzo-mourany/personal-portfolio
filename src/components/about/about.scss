@@ -1,15 +1,25 @@
 @import "../../global.scss";
 .about {
     background-color: $mainColor;
+    display: flex;
+    justify-content: center;
     .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        width: 60%;
+        .right {
+            margin: 50px;
+            width: 50%;
+            text-align: justify;
+            text-justify: inter-word;
+        }
         .left {
             width: 50%;
             text-align: justify;
             text-justify: inter-word;
+            margin: 50px;
             h2 {
                 margin-bottom: 40px;
                 font-weight: 600;

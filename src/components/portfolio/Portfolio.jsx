@@ -1,9 +1,8 @@
 import "./portfolio.scss";
-import featuredPortfolio from "../../data";
+//import featuredPortfolio from "../../data";
 
 export default function Portfolio() {
 
-    const data = featuredPortfolio;
 
     return (
         <div className="portfolio" id="portfolio">
@@ -12,15 +11,9 @@ export default function Portfolio() {
                     <h2>Portfolio</h2>
                 </div>
                 <div className="container">
-                    {data.map((d) => (
-                        <div className="item">
-                            <img
-                                src={d.img}
-                                alt=""
-                            />
-                            <h3>{d.title}</h3>
-                        </div>
-                    ))}
+                    <div className="item">
+
+                    </div>
                 </div>
             </div>
         </div>
