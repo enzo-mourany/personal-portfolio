@@ -4,3 +4,9 @@ $highlightColor: #43FFD5;
 $mainColor: #0B1829;
 $decoration: #CB3752;
 $secondaryDecoration: #401A26;
+$width: 768px;
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

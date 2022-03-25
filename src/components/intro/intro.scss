@@ -1,71 +1,82 @@
-                * {
-                    font-weight: 500;
-                }
-                
-                @import "../../global.scss";
-                .intro {
-                    background-color: $mainColor;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .left {
-                        background-color: #fff;
+                    * {
+                        font-weight: 500;
                     }
-                    .right {
-                        flex: 0.5;
-                        position: relative;
-                        .wrapper {
-                            width: 100%;
-                            height: 100%;
-                            padding-left: 50px;
-                            display: flex;
+                    
+                    @import "../../global.scss";
+                    .intro {
+                        background-color: $mainColor;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include mobile {
                             flex-direction: column;
-                            justify-content: center;
-                            h2 {
-                                font-size: 40px;
-                                opacity: 40%;
-                            }
-                            h1 {
-                                font-size: 80px;
-                                color: '#fff';
-                                margin: 10px 0;
-                                opacity: 90%;
-                            }
-                            h3 {
-                                font-size: 30px;
-                            }
+                            align-items: center;
                         }
-                        .buttons {
-                            display: flex;
-                            flex-direction: row;
-                            padding-top: 60px;
-                            padding-bottom: 30px;
-                            padding-left: 50px;
-                            .learnMore {
-                                background: linear-gradient(90deg, #B9F9F4, $highlightColor);
-                                padding: 16px;
-                                margin-right: 40px;
-                                border-radius: 30px;
-                                cursor: pointer;
-                            }
-                            .downloadPdf {
-                                border: solid 2px $highlightColor;
-                                padding: 10px;
-                                margin-right: 40px;
-                                border-radius: 30px;
-                                cursor: pointer;
-                                a {
-                                    color: $highlightColor;
+                        .left {
+                            background-color: #fff;
+                        }
+                        .right {
+                            flex: 0.5;
+                            position: relative;
+                            .wrapper {
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 50px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                @include mobile {
+                                    padding-left: 0;
+                                    align-items: center;
+                                }
+                                h1 {
+                                    font-size: 60px;
+                                    margin: 10px 0;
+                                    @include mobile {
+                                        font-size: 40px;
+                                    }
+                                }
+                                h2 {
+                                    font-size: 35px;
+                                }
+                                h3 {
+                                    font-size: 30px;
+                                    @include mobile {
+                                        font-size: 20px;
+                                    }
                                 }
                             }
-                            a {
-                                margin-right: 40px;
-                                margin-left: 40px;
-                                text-decoration: none;
-                                font-weight: 500;
-                                font-size: 20px;
-                                color: $mainColor;
+                            .buttons {
+                                display: flex;
+                                flex-direction: row;
+                                padding-top: 60px;
+                                padding-bottom: 30px;
+                                padding-left: 50px;
+                                .learnMore {
+                                    background: linear-gradient(90deg, #B9F9F4, $highlightColor);
+                                    padding: 16px;
+                                    margin-right: 40px;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+                                }
+                                .downloadPdf {
+                                    border: solid 2px $highlightColor;
+                                    padding: 10px;
+                                    margin-right: 40px;
+                                    border-radius: 30px;
+                                    cursor: pointer;
+                                    a {
+                                        color: $highlightColor;
+                                    }
+                                }
+                                a {
+                                    margin-right: 40px;
+                                    margin-left: 40px;
+                                    text-decoration: none;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    color: $mainColor;
+                                }
                             }
                         }
                     }
-                }
