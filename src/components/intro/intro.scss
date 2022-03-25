@@ -23,11 +23,13 @@
                             justify-content: center;
                             h2 {
                                 font-size: 40px;
+                                opacity: 40%;
                             }
                             h1 {
                                 font-size: 80px;
-                                color: #B9F9F4;
+                                color: '#fff';
                                 margin: 10px 0;
+                                opacity: 90%;
                             }
                             h3 {
                                 font-size: 30px;
@@ -40,19 +42,21 @@
                             padding-bottom: 30px;
                             padding-left: 50px;
                             .learnMore {
-                                background: linear-gradient(90deg, #B9F9F4, #C6AFFA);
+                                background: linear-gradient(90deg, #B9F9F4, $highlightColor);
                                 padding: 16px;
                                 margin-right: 40px;
                                 border-radius: 30px;
                                 cursor: pointer;
                             }
                             .downloadPdf {
-                                border-image: linear-gradient(90deg, #B9F9F4, #C6AFFA) 1;
-                                border: solid 3px;
+                                border: solid 2px $highlightColor;
                                 padding: 10px;
                                 margin-right: 40px;
                                 border-radius: 30px;
                                 cursor: pointer;
+                                a {
+                                    color: $highlightColor;
+                                }
                             }
                             a {
                                 margin-right: 40px;
@@ -60,7 +64,7 @@
                                 text-decoration: none;
                                 font-weight: 500;
                                 font-size: 20px;
-                                color: #fff;
+                                color: $mainColor;
                             }
                         }
                     }
