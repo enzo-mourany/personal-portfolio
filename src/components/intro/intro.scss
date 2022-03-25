@@ -32,15 +32,18 @@
                                 h1 {
                                     font-size: 60px;
                                     margin: 10px 0;
+                                    opacity: 60%;
                                     @include mobile {
                                         font-size: 40px;
                                     }
                                 }
                                 h2 {
                                     font-size: 35px;
+                                    opacity: 60%;
                                 }
                                 h3 {
                                     font-size: 30px;
+                                    opacity: 60%;
                                     @include mobile {
                                         font-size: 20px;
                                     }
@@ -52,6 +55,9 @@
                                 padding-top: 60px;
                                 padding-bottom: 30px;
                                 padding-left: 50px;
+                                @include mobile {
+                                    flex-direction: column;
+                                }
                                 .learnMore {
                                     background: linear-gradient(90deg, #B9F9F4, $highlightColor);
                                     padding: 16px;

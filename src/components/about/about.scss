@@ -1,5 +1,4 @@
 @import "../../global.scss";
-@import "../../fonts/Calibre/Calibre-Medium.ttf";
 .about {
     background-color: $mainColor;
     display: flex;
@@ -10,17 +9,14 @@
         align-items: center;
         height: 100%;
         width: 50%;
-        .right {
-            margin: 50px;
-            width: 50%;
-            text-align: justify;
-            text-justify: inter-word;
-        }
         .left {
             width: 50%;
             text-align: justify;
             text-justify: inter-word;
             margin: 50px;
+            @include mobile {
+                width: 90%;
+            }
             h2 {
                 margin-bottom: 40px;
                 font-weight: 600;
