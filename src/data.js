@@ -5,7 +5,7 @@ export const featuredPortfolio = [{
         description: "this is a simple test",
         tech: ["React Native"],
         retex: "link-test",
-        githubLink: "github-link test",
+        githubLink: "www.google.com",
     },
     {
         id: 2,
