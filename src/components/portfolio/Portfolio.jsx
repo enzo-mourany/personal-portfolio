@@ -11,13 +11,76 @@ export default function Portfolio() {
                 <div className="title">
                     <h2>Portfolio</h2>
                 </div>
-                <div className="container">
+                <section className="container">
 
-                    <div className="item">
+                    <ul className="project-grid">
+                        <li className="item">
+                            <div className="project-inner">
+                                <div className="top">
+                                    <div className="project-top">
+                                        <div className="folder"></div>
+                                        <div className="project-github"></div>
+                                        <div className="project-links"></div>
+                                    </div>
+                                    <h3 className="project-title">test</h3>
+                                    <div className="project-description"></div>
+                                </div>
+                                <div className="bottom">
+                                    <ul className="project-tech-list"></ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="item">
+                            <div className="project-inner">
+                                <div className="top">
+                                    <div className="project-top">
+                                        <div className="folder"></div>
+                                        <div className="project-github"></div>
+                                        <div className="project-links"></div>
+                                    </div>
+                                    <h3 className="project-title">test</h3>
+                                    <div className="project-description"></div>
+                                </div>
+                                <div className="bottom">
+                                    <ul className="project-tech-list"></ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="item">
+                            <div className="project-inner">
+                                <div className="top">
+                                    <div className="project-top">
+                                        <div className="folder"></div>
+                                        <div className="project-github"></div>
+                                        <div className="project-links"></div>
+                                    </div>
+                                    <h3 className="project-title">test</h3>
+                                    <div className="project-description"></div>
+                                </div>
+                                <div className="bottom">
+                                    <ul className="project-tech-list"></ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li className="item">
+                            <div className="project-inner">
+                                <div className="top">
+                                    <div className="project-top">
+                                        <div className="folder"></div>
+                                        <div className="project-github"></div>
+                                        <div className="project-links"></div>
+                                    </div>
+                                    <h3 className="project-title">test</h3>
+                                    <div className="project-description"></div>
+                                </div>
+                                <div className="bottom">
+                                    <ul className="project-tech-list"></ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-                    </div>
-
-                </div>
+                </section>
             </div>
         </div>
     )
