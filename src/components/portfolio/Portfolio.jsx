@@ -14,7 +14,7 @@ export default function Portfolio() {
                 <section className="container">
 
                     <ul className="project-grid">
-                        <li className="item">
+                        <li className="item" >
                             <div className="project-inner">
                                 <div className="top">
                                     <div className="project-top">
