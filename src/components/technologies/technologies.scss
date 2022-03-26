@@ -6,28 +6,25 @@
         //justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 90%;
         .title {
             padding: 100px;
         }
         .blocs {
             display: flex;
             justify-content: space-between;
-            @keyframes animate {
-                0%,
-                100% {
-                    transform: translateY(-40px);
-                }
-                50% {
-                    transform: translateY(40px);
-                }
+            flex-direction: row;
+            @include mobile {
+                flex-direction: column;
             }
             .container {
+                position: relative;
                 width: 300px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background: linear-gradient(45deg, $highlightColor, #C6AFFA);
-                border-radius: 25px;
+                background: #101F38;
+                border-radius: 5px;
                 margin: 40px;
                 animation: animate 10s linear infinite;
                 animation-delay: calc(-1s * var(--i));
@@ -43,15 +40,6 @@
                         padding-left: 30px;
                     }
                 }
-            }
-            .container:nth-child(1) {
-                top: -50px;
-            }
-            .container:nth-child(2) {
-                top: -100px;
-            }
-            .container:nth-child(3) {
-                top: -10px;
             }
         }
     }

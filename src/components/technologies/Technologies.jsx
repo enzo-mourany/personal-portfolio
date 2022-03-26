@@ -60,6 +60,9 @@ export default function Technologies() {
                             <li>
                                 IntelliJ
                             </li>
+                            <li>
+                                Git
+                            </li>
                         </ul>
                     </div>
                 </div>

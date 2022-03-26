@@ -1,5 +1,6 @@
                     * {
                         font-weight: 500;
+                        font-family: 'Nunito Sans', sans-serif;
                     }
                     
                     @import "../../global.scss";
@@ -30,20 +31,24 @@
                                     align-items: center;
                                 }
                                 h1 {
-                                    font-size: 60px;
-                                    margin: 10px 0;
-                                    opacity: 60%;
+                                    letter-spacing: 1px;
+                                    font-size: 90px;
+                                    opacity: 80%;
+                                    font-weight: 600;
                                     @include mobile {
                                         font-size: 40px;
                                     }
                                 }
                                 h2 {
-                                    font-size: 35px;
+                                    font-weight: 400;
+                                    letter-spacing: 1px;
+                                    font-size: 25px;
                                     opacity: 60%;
                                 }
                                 h3 {
-                                    font-size: 30px;
-                                    opacity: 60%;
+                                    letter-spacing: 1px;
+                                    font-size: 50px;
+                                    opacity: 80%;
                                     @include mobile {
                                         font-size: 20px;
                                     }
@@ -59,10 +64,13 @@
                                     flex-direction: column;
                                 }
                                 .learnMore {
-                                    background: linear-gradient(90deg, #B9F9F4, $highlightColor);
+                                    background: $highlightColor;
                                     padding: 16px;
                                     margin-right: 40px;
                                     border-radius: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                     cursor: pointer;
                                 }
                                 .downloadPdf {
@@ -70,6 +78,9 @@
                                     padding: 10px;
                                     margin-right: 40px;
                                     border-radius: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                     cursor: pointer;
                                     a {
                                         color: $highlightColor;
