@@ -14,18 +14,21 @@
             }
         }
         .container {
-            width: 70%;
             display: flex;
-            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
+            -webkit-box-align: center;
+            flex-direction: column;
+            align-items: center;
+            @include mobile {
+                padding: 80px 0px;
+            }
             .project-grid {
+                background-color: red;
                 list-style: none;
                 padding: Opx;
                 margin: 50px 0px 0px;
                 display: grid;
                 position: relative;
-                display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 grid-gap: 15px;
                 position: relative;
@@ -42,9 +45,8 @@
                         position: relative;
                         height: 100%;
                         padding: 2rem 1.75rem;
-                        border-radius: var(--border-radius);
-                        background-color: var(--light-navy);
-                        transition: var(--transition);
+                        border-radius: 3px;
+                        background-color: $secondaryColor;
                         .top {
                             display: block;
                             .project-top {
@@ -86,6 +88,12 @@
                                     position: static;
                                 }
                             }
+                            .project-description {
+                                font-size: 17px;
+                            }
+                        }
+                        .bottom {
+                            display: grid;
                         }
                     }
                 }
