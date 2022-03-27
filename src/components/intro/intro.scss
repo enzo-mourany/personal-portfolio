@@ -64,14 +64,33 @@
                                     flex-direction: column;
                                 }
                                 .learnMore {
-                                    background: $highlightColor;
-                                    padding: 16px;
-                                    margin-right: 40px;
-                                    border-radius: 30px;
                                     display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    cursor: pointer;
+                                    .learnMoreBtn {
+                                        color: $highlightColor;
+                                        text-decoration: none;
+                                        padding: 20px 50px;
+                                        font-size: 1.25rem;
+                                        position: relative;
+                                        margin: 32px;
+                                    }
+                                    .learnMoreBtn::after,
+                                    .learnMoreBtn::before {
+                                        border: 3px solid $highlightColor;
+                                        content: "";
+                                        position: absolute;
+                                        width: calc(100% - 6px);
+                                        height: calc(100% - 6px);
+                                        left: 0;
+                                        bottom: 0;
+                                        z-index: -1;
+                                        transition: transform 0.3s ease;
+                                    }
+                                    .learnMoreBtn:hover::after {
+                                        transform: translate(-5px, -5px);
+                                    }
+                                    .learnMoreBtn:hover::before {
+                                        transform: translate(5px, 5px);
+                                    }
                                 }
                                 .downloadPdf {
                                     border: solid 2px $highlightColor;
@@ -84,15 +103,9 @@
                                     cursor: pointer;
                                     a {
                                         color: $highlightColor;
+                                        font-size: 1.25rem;
+                                        text-decoration: none;
                                     }
-                                }
-                                a {
-                                    margin-right: 40px;
-                                    margin-left: 40px;
-                                    text-decoration: none;
-                                    font-weight: 500;
-                                    font-size: 20px;
-                                    color: $mainColor;
                                 }
                             }
                         }

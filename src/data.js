@@ -2,7 +2,7 @@ export const featuredPortfolio = [{
         id: 1,
         title: "The Tabata App",
         img: "../public/PNG/tabata-app.png",
-        description: "this is a simple test",
+        description: "A simple Tabata application compatible on IOS and Android. My React Native project",
         tech: ["React Native"],
         retex: "link-test",
         githubLink: "www.google.com",
