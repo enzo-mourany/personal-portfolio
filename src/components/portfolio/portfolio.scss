@@ -61,6 +61,30 @@
                                         height: 40px;
                                     }
                                 }
+                                .project-links {
+                                    display: flex;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    margin-right: -10px;
+                                    a {
+                                        display: flex;
+                                        -webkit-box-pack: center;
+                                        justify-content: center;
+                                        -webkit-box-align: center;
+                                        align-items: center;
+                                        padding: 5px 7px;
+                                        svg {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .project-title {
+                                margin: 0px 0px 10px;
+                                a {
+                                    position: static;
+                                }
                             }
                         }
                     }
