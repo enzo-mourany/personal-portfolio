@@ -87,7 +87,9 @@ export default function Portfolio() {
                                     <h3 className="project-title">
                                         <a href="#">{featuredPortfolio[1].title}</a>
                                     </h3>
-                                    <div className="project-description"></div>
+                                    <div className="project-description">
+                                        <p>{featuredPortfolio[1].description}</p>
+                                    </div>
                                 </div>
                                 <div className="bottom">
                                     <ul className="project-tech-list"></ul>
@@ -125,7 +127,9 @@ export default function Portfolio() {
                                     <h3 className="project-title">
                                         <a href="#">{featuredPortfolio[2].title}</a>
                                     </h3>
-                                    <div className="project-description"></div>
+                                    <div className="project-description">
+                                        <p>{featuredPortfolio[2].description}</p>
+                                    </div>
                                 </div>
                                 <div className="bottom">
                                     <ul className="project-tech-list"></ul>
@@ -164,7 +168,9 @@ export default function Portfolio() {
                                     <h3 className="project-title">
                                         <a href="#">{featuredPortfolio[3].title}</a>
                                     </h3>
-                                    <div className="project-description"></div>
+                                    <div className="project-description">
+                                        <p>{featuredPortfolio[3].description}</p>
+                                    </div>
                                 </div>
                                 <div className="bottom">
                                     <ul className="project-tech-list"></ul>

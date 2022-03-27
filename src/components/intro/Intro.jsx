@@ -20,9 +20,7 @@ export default function Intro() {
                         </a>
                     </div>
                     <div className="downloadPdf">
-                        <a href="#">
-                            Download CV
-                        </a>
+                        <a href="#">Download CV</a>
                     </div>
                 </div>
             </div>

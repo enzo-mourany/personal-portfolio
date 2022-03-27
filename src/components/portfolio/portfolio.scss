@@ -89,14 +89,21 @@
                                 a {
                                     position: static;
                                     text-decoration: none;
+                                    font-weight: 600;
                                 }
                             }
                             .project-description {
                                 font-size: 17px;
+                                opacity: 60%;
                             }
                         }
                         .bottom {
                             display: grid;
+                            .project-tech-list {
+                                li {
+                                    opacity: 40%;
+                                }
+                            }
                         }
                     }
                 }
