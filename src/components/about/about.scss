@@ -51,8 +51,10 @@
             h2 {
                 margin-bottom: 40px;
                 font-weight: 600;
-                font-size: 40px;
+                font-size: 44px;
                 letter-spacing: 2px;
+                font-family: CalibreSemiBold;
+                color: $textColorDarkMode;
             }
             h2::after {
                 content: "";
@@ -67,10 +69,11 @@
                 opacity: 60%;
             }
             p {
-                font-size: 18px;
-                line-height: 1.6em;
-                font-weight: 300;
-                opacity: 60%;
+                font-size: 22px;
+                line-height: 1.3em;
+                font-family: CalibreMedium;
+                color: $textColorDarkMode;
+                opacity: 70%;
             }
         }
     }
