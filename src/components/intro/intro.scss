@@ -1,112 +1,172 @@
-                    * {
-                        font-weight: 500;
-                        font-family: 'Nunito Sans', sans-serif;
-                    }
-                    
-                    @import "../../global.scss";
-                    .intro {
-                        background-color: $mainColor;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        @include mobile {
-                            flex-direction: column;
-                            align-items: center;
-                        }
-                        .left {
-                            background-color: #fff;
-                        }
-                        .right {
-                            flex: 0.5;
-                            position: relative;
-                            -webkit-font-smoothing: antialiased;
-                            .wrapper {
-                                width: 100%;
-                                height: 100%;
-                                padding-left: 50px;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                @include mobile {
-                                    padding-left: 0;
-                                    align-items: center;
-                                }
-                                h1 {
-                                    letter-spacing: 1px;
-                                    font-size: 90px;
-                                    opacity: 80%;
-                                    font-weight: 600;
-                                    @include mobile {
-                                        font-size: 40px;
-                                    }
-                                }
-                                h2 {
-                                    font-weight: 400;
-                                    letter-spacing: 1px;
-                                    font-size: 25px;
-                                    opacity: 60%;
-                                }
-                                h3 {
-                                    letter-spacing: 1px;
-                                    font-size: 50px;
-                                    opacity: 80%;
-                                    @include mobile {
-                                        font-size: 20px;
-                                    }
-                                }
-                            }
-                            .buttons {
-                                display: flex;
-                                flex-direction: row;
-                                padding-top: 60px;
-                                padding-bottom: 30px;
-                                padding-left: 50px;
-                                @include mobile {
-                                    flex-direction: column;
-                                }
-                                .learnMore {
-                                    display: flex;
-                                    .learnMoreBtn {
-                                        color: $highlightColor;
-                                        text-decoration: none;
-                                        padding: 20px 50px;
-                                        font-size: 1.25rem;
-                                        position: relative;
-                                        margin: 32px;
-                                    }
-                                    .learnMoreBtn::after,
-                                    .learnMoreBtn::before {
-                                        border: 3px solid $highlightColor;
-                                        position: absolute;
-                                        width: calc(100% - 6px);
-                                        height: calc(100% - 6px);
-                                        left: 0;
-                                        bottom: 0;
-                                        z-index: -1;
-                                        transition: transform 0.3s ease;
-                                    }
-                                    .learnMoreBtn:hover::after {
-                                        transform: translate(-5px, -5px);
-                                    }
-                                    .learnMoreBtn:hover::before {
-                                        transform: translate(5px, 5px);
-                                    }
-                                }
-                                .downloadPdf {
-                                    border: solid 2px $highlightColor;
-                                    padding: 10px;
-                                    margin-right: 40px;
-                                    border-radius: 30px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    cursor: pointer;
-                                    a {
-                                        color: $highlightColor;
-                                        font-size: 1.25rem;
-                                        text-decoration: none;
-                                    }
-                                }
-                            }
-                        }
-                    }
+@font-face {
+    font-family: "CalibreMedium";
+    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreSemiBold";
+    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoSemiBold";
+    src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+* {
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+@import "../../global.scss";
+@font-face {
+    font-family: "CalibreMedium";
+    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreSemiBold";
+    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoSemiBold";
+    src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.intro {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left {
+        background-color: #fff;
+    }
+    .right {
+        flex: 0.5;
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+            }
+            h1 {
+                letter-spacing: 1px;
+                font-size: 90px;
+                opacity: 80%;
+                font-weight: 600;
+                @include mobile {
+                    font-size: 40px;
+                }
+            }
+            h2 {
+                font-weight: 400;
+                letter-spacing: 1px;
+                font-size: 25px;
+                opacity: 60%;
+            }
+            h3 {
+                letter-spacing: 1px;
+                font-size: 50px;
+                opacity: 80%;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            @include mobile {
+                flex-direction: column;
+            }
+            .learnMore {
+                display: flex;
+                .learnMoreBtn {
+                    color: $highlightColor;
+                    text-decoration: none;
+                    padding: 20px 50px;
+                    font-size: 1.25rem;
+                    position: relative;
+                    margin: 32px;
+                }
+                .learnMoreBtn::after,
+                .learnMoreBtn::before {
+                    border: 3px solid $highlightColor;
+                    position: absolute;
+                    width: calc(100% - 6px);
+                    height: calc(100% - 6px);
+                    left: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    transition: transform 0.3s ease;
+                }
+                .learnMoreBtn:hover::after {
+                    transform: translate(-5px, -5px);
+                }
+                .learnMoreBtn:hover::before {
+                    transform: translate(5px, 5px);
+                }
+            }
+            .downloadPdf {
+                border: solid 2px $highlightColor;
+                padding: 10px;
+                margin-right: 40px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                a {
+                    color: $highlightColor;
+                    font-size: 1.25rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

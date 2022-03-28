@@ -1,4 +1,34 @@
 @import "../../global.scss";
+@font-face {
+    font-family: "CalibreMedium";
+    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreSemiBold";
+    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoSemiBold";
+    src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
 .about {
     background-color: $mainColor;
     display: flex;
