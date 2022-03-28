@@ -110,7 +110,10 @@
                 }
             }
             .learnMore:hover {
-                background-color: $secondaryColor;
+                background-color: $highlightColor;
+                a {
+                    color: $mainColor;
+                }
             }
             .downloadPdf {
                 display: flex;

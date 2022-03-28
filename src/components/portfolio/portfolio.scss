@@ -64,11 +64,12 @@
                 display: grid;
                 position: relative;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                grid-gap: 15px;
+                grid-gap: 8px;
                 box-sizing: inherit;
                 .item {
                     display: flex;
                     text-align: -webkit-match-parent;
+                    padding: 10px;
                     .project-inner {
                         display: flex;
                         -webkit-box-pack: justify;
@@ -155,6 +156,9 @@
                                 }
                             }
                         }
+                    }
+                    .project-inner:hover {
+                        top: -10px;
                     }
                 }
             }
