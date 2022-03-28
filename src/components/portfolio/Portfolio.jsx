@@ -92,7 +92,9 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="bottom">
-                                    <ul className="project-tech-list"></ul>
+                                    <ul className="project-tech-list">
+                                        <li>{featuredPortfolio[1].tech[0]}</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -132,7 +134,10 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="bottom">
-                                    <ul className="project-tech-list"></ul>
+                                    <ul className="project-tech-list">
+                                        <li>{featuredPortfolio[2].tech[0]}</li>
+                                        <li>{featuredPortfolio[2].tech[1]}</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -173,7 +178,10 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="bottom">
-                                    <ul className="project-tech-list"></ul>
+                                    <ul className="project-tech-list">
+                                        <li>{featuredPortfolio[3].tech[0]}</li>
+                                        <li>{featuredPortfolio[3].tech[1]}</li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
