@@ -48,6 +48,7 @@
                         padding: 2rem 1.75rem;
                         border-radius: 3px;
                         background-color: $secondaryColor;
+                        -webkit-font-smoothing: antialiased;
                         .top {
                             display: block;
                             width: 100%;

@@ -26,8 +26,7 @@
                 background: #101F38;
                 border-radius: 5px;
                 margin: 40px;
-                animation: animate 10s linear infinite;
-                animation-delay: calc(-1s * var(--i));
+                -webkit-font-smoothing: antialiased;
                 h2 {
                     padding: 30px;
                     font-weight: 600;
