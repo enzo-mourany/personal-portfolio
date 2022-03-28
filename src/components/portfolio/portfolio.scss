@@ -1,4 +1,28 @@
 @import "../../global.scss";
+@font-face {
+    font-family: "CalibreMedium";
+    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreSemiBold";
+    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
 .portfolio {
     background-color: $mainColor;
     .wrapper {
@@ -10,7 +34,10 @@
         .title {
             margin: 5px;
             h2 {
-                font-weight: 500;
+                font-weight: 700;
+                color: $textColorDarkMode;
+                font-size: 32px;
+                font-family: CalibreMedium;
             }
         }
         .container {
@@ -34,7 +61,7 @@
                 grid-gap: 15px;
                 box-sizing: inherit;
                 .item {
-                    display: list-item;
+                    display: flex;
                     text-align: -webkit-match-parent;
                     .project-inner {
                         display: flex;
@@ -90,12 +117,14 @@
                                 a {
                                     position: static;
                                     text-decoration: none;
-                                    font-weight: 600;
+                                    font-family: CalibreSemiBold;
+                                    font-size: 24px;
                                 }
                             }
                             .project-description {
                                 font-size: 17px;
                                 opacity: 60%;
+                                font-family: CalibreLight;
                             }
                         }
                         .bottom {
@@ -113,8 +142,10 @@
                                 li {
                                     display: list-item;
                                     text-align: -webkit-match-parent;
-                                    opacity: 40%;
+                                    opacity: 50%;
                                     margin-right: 15px;
+                                    font-family: SFMonoRegular;
+                                    font-size: 14px;
                                 }
                             }
                         }
