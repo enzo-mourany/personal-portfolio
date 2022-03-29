@@ -32,6 +32,7 @@
 .portfolio {
     background-color: $mainColor;
     padding-bottom: 100px;
+    padding-top: 100px;
     .wrapper {
         display: flex;
         justify-content: center;
@@ -69,12 +70,21 @@
                 box-sizing: inherit;
                 padding-inline-start: 0px;
                 transition: all 0.25s ease-in-out 0s;
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .item {
                     display: flex;
                     text-align: -webkit-match-parent;
                     //padding: 10px;
                     transition: all 0.25s ease-in-out 0s;
                     height: 300px;
+                    @include mobile {
+                        width: 400px;
+                    }
                     .project-inner {
                         display: flex;
                         -webkit-box-pack: justify;
