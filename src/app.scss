@@ -1,6 +1,6 @@
 * {
-    margin: 0 important;
-    padding: 0 important;
+    margin: 0;
+    padding: 0;
 }
 
 .app {
@@ -22,7 +22,7 @@
     }
     >* {
         width: 100vw;
-        height: calc(100vh - 70px);
-        scroll-snap-align: start;
+        //height: calc(100vh - 70px);
+        //scroll-snap-align: start;
     }
 }
