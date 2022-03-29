@@ -99,10 +99,10 @@
                                 margin-bottom: 35px;
                                 height: auto;
                                 .folder {
-                                    color: $highlightColor;
                                     svg {
                                         width: 40px;
                                         height: 40px;
+                                        transition: all 0.3s ease;
                                     }
                                 }
                                 .project-links {
@@ -122,6 +122,12 @@
                                             height: 20px;
                                         }
                                     }
+                                    a:hover {
+                                        svg {
+                                            stroke: $highlightColor;
+                                            //transition: all 0.3s ease;
+                                        }
+                                    }
                                 }
                             }
                             .project-title {
@@ -131,6 +137,7 @@
                                     text-decoration: none;
                                     font-family: CalibreSemiBold;
                                     font-size: 24px;
+                                    transition: all 0.3s ease;
                                 }
                             }
                             .project-description {
@@ -166,10 +173,15 @@
                         //top: -10px;
                         .top {
                             .project-top {
-                                .project-title {
-                                    a {
-                                        color: $highlightColor;
+                                .folder {
+                                    svg {
+                                        stroke: $highlightColor;
                                     }
+                                }
+                            }
+                            .project-title {
+                                a {
+                                    color: $highlightColor;
                                 }
                             }
                         }
