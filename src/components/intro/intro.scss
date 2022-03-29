@@ -34,6 +34,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    //padding-top: 100px;
+    padding-bottom: 100px;
+    height: calc(100vh - 70px);
     @include mobile {
         flex-direction: column;
         align-items: center;
@@ -42,7 +45,7 @@
         background-color: #fff;
     }
     .right {
-        flex: 0.5;
+        //flex: 0.5;
         position: relative;
         -webkit-font-smoothing: antialiased;
         .wrapper {
