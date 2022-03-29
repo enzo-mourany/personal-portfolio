@@ -29,6 +29,12 @@
     font-weight: normal;
 }
 
+*,
+ ::before,
+ ::after {
+    box-sizing: inherit;
+}
+
 .portfolio {
     background-color: $mainColor;
     padding-bottom: 100px;
