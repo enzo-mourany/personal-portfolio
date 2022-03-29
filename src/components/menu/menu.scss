@@ -17,8 +17,17 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+    @include mobile {
+        width: 100%;
+        top: -100vh;
+        right: 0;
+    }
     &.active {
         right: 0;
+        @include mobile {
+            top: 0;
+            right: 0;
+        }
     }
     ul {
         margin: 0;

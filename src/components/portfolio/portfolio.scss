@@ -162,6 +162,15 @@
                     }
                     .project-inner:hover {
                         top: -10px;
+                        .top {
+                            .project-top {
+                                .project-title {
+                                    a {
+                                        color: $highlightColor;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
