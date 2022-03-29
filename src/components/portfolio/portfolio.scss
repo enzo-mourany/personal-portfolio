@@ -81,7 +81,7 @@
                     text-align: -webkit-match-parent;
                     //padding: 10px;
                     transition: all 0.25s ease-in-out 0s;
-                    height: 300px;
+                    height: 340px;
                     @include mobile {
                         width: 400px;
                     }
@@ -110,9 +110,9 @@
                                 height: auto;
                                 .folder {
                                     svg {
+                                        stroke: $highlightColor;
                                         width: 40px;
                                         height: 40px;
-                                        transition: all 0.3s ease;
                                     }
                                 }
                                 .project-links {
@@ -182,13 +182,6 @@
                     .project-inner:hover {
                         //top: -10px;
                         .top {
-                            .project-top {
-                                .folder {
-                                    svg {
-                                        stroke: $highlightColor;
-                                    }
-                                }
-                            }
                             .project-title {
                                 a {
                                     color: $highlightColor;
