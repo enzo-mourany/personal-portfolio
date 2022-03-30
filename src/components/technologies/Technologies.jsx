@@ -7,7 +7,7 @@ export default function Technologies() {
         <div className="technologies" id="technologies">
             <div className="wrapper">
                 <div className="title">
-                    <h1>Technologies I Use</h1>
+                    <h2>Technologies I Use</h2>
                 </div>
                 <div className="blocs">
                     <div className="container">

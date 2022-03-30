@@ -89,6 +89,11 @@ export const backendLanguages = [{
         name: "Solidity",
         level: 10,
     },
+    {
+        id: 5,
+        name: "Python",
+        level: 30,
+    },
 ]
 
 export const tools = [{

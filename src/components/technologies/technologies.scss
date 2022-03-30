@@ -30,7 +30,7 @@
 }
 
 .technologies {
-    background-color: $mainColor;
+    //background-color: $mainColor;
     .wrapper {
         display: flex;
         //justify-content: center;
@@ -39,6 +39,12 @@
         height: 90%;
         .title {
             padding: 100px;
+            h2 {
+                font-size: $titleSize;
+                @include mobile {
+                    font-size: $titleSizeMobile;
+                }
+            }
         }
         .blocs {
             display: flex;
