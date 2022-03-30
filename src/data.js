@@ -35,3 +35,80 @@ export const featuredPortfolio = [{
         githubLink: "github-link test",
     },
 ];
+
+export const frontendLanguages = [{
+        id: 1,
+        name: "Javascript",
+        level: 70,
+    },
+    {
+        id: 2,
+        name: "Typescript",
+        level: 30,
+    },
+    {
+        id: 3,
+        name: "React DOM",
+        level: 40,
+    },
+    {
+        id: 4,
+        name: "React Native",
+        level: 50,
+    },
+    {
+        id: 5,
+        name: "HTML",
+        level: 90,
+    },
+    {
+        id: 6,
+        name: "CSS",
+        level: 90,
+    },
+
+];
+
+export const backendLanguages = [{
+        id: 7,
+        name: "Node Js",
+        level: 20,
+    },
+    {
+        id: 8,
+        name: "Java",
+        level: 40,
+    },
+    {
+        id: 9,
+        name: "C#",
+        level: 30,
+    },
+    {
+        id: 10,
+        name: "Solidity",
+        level: 10,
+    },
+]
+
+export const tools = [{
+        id: 11,
+        name: "VSCode",
+        level: 90,
+    },
+    {
+        id: 12,
+        name: "Vim",
+        level: 80,
+    },
+    {
+        id: 13,
+        name: "IntelliJ",
+        level: 60,
+    },
+    {
+        id: 14,
+        name: "Git",
+        level: 70,
+    },
+]
