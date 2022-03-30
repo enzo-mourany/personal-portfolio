@@ -1,4 +1,6 @@
 import "./technologies.scss";
+import { frontendLanguages, backendLanguages, tools } from "../../data";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Technologies() {
     return (
@@ -12,22 +14,28 @@ export default function Technologies() {
                         <h2>Frontend</h2>
                         <ul>
                             <li>
-                                Javascript
+                                {frontendLanguages[0].name}
+                                <ProgressBar
+                                    completed={frontendLanguages[0].level}
+                                    maxCompleted={100}
+                                    customLabel=" "
+                                    bgColor="#43FFD5"
+                                    baseBgColor="#0B1829" />
                             </li>
                             <li>
-                                Typescript
+                                {frontendLanguages[1].name}
                             </li>
                             <li>
-                                React DOM
+                                {frontendLanguages[2].name}
                             </li>
                             <li>
-                                React Native
+                                {frontendLanguages[3].name}
                             </li>
                             <li>
-                                HTML
+                                {frontendLanguages[4].name}
                             </li>
                             <li>
-                                CSS
+                                {frontendLanguages[5].name}
                             </li>
                         </ul>
                     </div>
@@ -35,16 +43,16 @@ export default function Technologies() {
                         <h2>Backend</h2>
                         <ul>
                             <li>
-                                Node JS
+                                {backendLanguages[0].name}
                             </li>
                             <li>
-                                Java
+                                {backendLanguages[1].name}
                             </li>
                             <li>
-                                C#
+                                {backendLanguages[2].name}
                             </li>
                             <li>
-                                Solidity
+                                {backendLanguages[3].name}
                             </li>
                         </ul>
                     </div>
@@ -52,16 +60,16 @@ export default function Technologies() {
                         <h2>Tools</h2>
                         <ul>
                             <li>
-                                Visual Studio Code
+                                {tools[0].name}
                             </li>
                             <li>
-                                Vim
+                                {tools[1].name}
                             </li>
                             <li>
-                                IntelliJ
+                                {tools[2].name}
                             </li>
                             <li>
-                                Git
+                                {tools[3].name}
                             </li>
                         </ul>
                     </div>

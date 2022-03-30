@@ -70,44 +70,44 @@ export const frontendLanguages = [{
 ];
 
 export const backendLanguages = [{
-        id: 7,
+        id: 1,
         name: "Node Js",
         level: 20,
     },
     {
-        id: 8,
+        id: 2,
         name: "Java",
         level: 40,
     },
     {
-        id: 9,
+        id: 3,
         name: "C#",
         level: 30,
     },
     {
-        id: 10,
+        id: 4,
         name: "Solidity",
         level: 10,
     },
 ]
 
 export const tools = [{
-        id: 11,
+        id: 1,
         name: "VSCode",
         level: 90,
     },
     {
-        id: 12,
+        id: 2,
         name: "Vim",
         level: 80,
     },
     {
-        id: 13,
+        id: 3,
         name: "IntelliJ",
         level: 60,
     },
     {
-        id: 14,
+        id: 4,
         name: "Git",
         level: 70,
     },
