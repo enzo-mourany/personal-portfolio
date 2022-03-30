@@ -3,6 +3,22 @@ import { frontendLanguages, backendLanguages, tools } from "../../data";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 export default function Technologies() {
+    //const [data, setData] = useState([]);
+    /*const list = [
+        {
+            id: "frontendLanguages",
+            title: "FrontendLanguages",
+        },
+        {
+            id: "backendLanguages",
+            title: "BackendLanguages",
+        },
+        {
+            id: "tools",
+            title: "Tools",
+        },
+    ]
+    */
     return (
         <div className="technologies" id="technologies">
             <div className="wrapper">
@@ -13,30 +29,20 @@ export default function Technologies() {
                     <div className="container">
                         <h2>Frontend</h2>
                         <ul>
-                            <li>
-                                {frontendLanguages[0].name}
-                                <ProgressBar
-                                    completed={frontendLanguages[0].level}
-                                    maxCompleted={100}
-                                    customLabel=" "
-                                    bgColor="#43FFD5"
-                                    baseBgColor="#0B1829" />
-                            </li>
-                            <li>
-                                {frontendLanguages[1].name}
-                            </li>
-                            <li>
-                                {frontendLanguages[2].name}
-                            </li>
-                            <li>
-                                {frontendLanguages[3].name}
-                            </li>
-                            <li>
-                                {frontendLanguages[4].name}
-                            </li>
-                            <li>
-                                {frontendLanguages[5].name}
-                            </li>
+                            {frontendLanguages.map((item) => (
+                                <li>
+                                    {item.name}
+                                    <ProgressBar
+                                        completed={item.level}
+                                        maxCompleted={100}
+                                        customLabel=" "
+                                        bgColor="#43FFD5"
+                                        baseBgColor="#0B1829"
+                                        height={10}
+                                        width={100}
+                                    />
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="container">
