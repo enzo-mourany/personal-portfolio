@@ -8,12 +8,12 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 <div className="left">
                     <a href="#intro" className="logo">Enzo Mourany</a>
                     <div className="itemContainer">
-                        <a href="https://www.linkedin.com/enzo-mourany/" target="_blank">
+                        <a href="https://www.linkedin.com/enzo-mourany/" target="_blank" rel="noreferrer">
                             <LinkedIn className="icon" />
                         </a>
                     </div>
                     <div className="itemContainer">
-                        <a href="https://github.com/enzo-mourany/" target="_blank">
+                        <a href="https://github.com/enzo-mourany/" target="_blank" rel="noreferrer">
                             <GitHub className="icon" />
                         </a>
                     </div>

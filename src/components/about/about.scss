@@ -47,14 +47,18 @@
             -webkit-font-smoothing: antialiased;
             @include mobile {
                 width: 90%;
+                margin: 10px;
             }
             h2 {
                 margin-bottom: 40px;
                 font-weight: 600;
-                font-size: 44px;
-                letter-spacing: 2px;
+                font-size: $titleSize;
+                letter-spacing: 1px;
                 font-family: CalibreSemiBold;
                 color: $textColorDarkMode;
+                @include mobile {
+                    font-size: $titleSizeMobile;
+                }
             }
             h2::after {
                 content: "";
@@ -69,11 +73,14 @@
                 opacity: 60%;
             }
             p {
-                font-size: 22px;
+                font-size: $textSize;
                 line-height: 1.3em;
                 font-family: CalibreMedium;
                 color: $textColorDarkMode;
                 opacity: 70%;
+                @include mobile {
+                    font-size: $textSizeMobile;
+                }
             }
         }
     }
