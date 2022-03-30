@@ -70,6 +70,10 @@
                     font-size: 18px;
                     margin-right: 5px;
                     opacity: 60%;
+                    transition: all 0.3s ease;
+                }
+                .icon:hover {
+                    opacity: 90%;
                 }
             }
         }

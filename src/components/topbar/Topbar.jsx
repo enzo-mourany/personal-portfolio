@@ -8,10 +8,14 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                 <div className="left">
                     <a href="#intro" className="logo">Enzo Mourany</a>
                     <div className="itemContainer">
-                        <LinkedIn className="icon" />
+                        <a href="https://www.linkedin.com/enzo-mourany/" target="_blank">
+                            <LinkedIn className="icon" />
+                        </a>
                     </div>
                     <div className="itemContainer">
-                        <GitHub className="icon" />
+                        <a href="https://github.com/enzo-mourany/" target="_blank">
+                            <GitHub className="icon" />
+                        </a>
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon" />
