@@ -1,86 +1,98 @@
-@import "../../global.scss";
-@font-face {
-    font-family: "CalibreMedium";
-    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "CalibreLight";
-    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "CalibreSemiBold";
-    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "SFMonoRegular";
-    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "SFMonoSemiBold";
-    src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
-    font-weight: normal;
-}
-
-.technologies {
-    //background-color: $mainColor;
-    .wrapper {
-        display: flex;
-        //justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 90%;
-        .title {
-            padding: 100px;
-            h2 {
-                font-size: $titleSize;
-                @include mobile {
-                    font-size: $titleSizeMobile;
-                }
-            }
-        }
-        .blocs {
+    @import "../../global.scss";
+    @font-face {
+        font-family: "CalibreMedium";
+        src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: "CalibreLight";
+        src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: "CalibreSemiBold";
+        src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: "SFMonoRegular";
+        src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: "SFMonoSemiBold";
+        src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+        font-weight: normal;
+    }
+    
+    .technologies {
+        //background-color: $mainColor;
+        .wrapper {
             display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            @include mobile {
-                flex-direction: column;
-            }
-            .container {
-                position: relative;
-                width: 300px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background: #101F38;
-                border-radius: 5px;
-                margin: 40px;
-                -webkit-font-smoothing: antialiased;
+            //justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90%;
+            .title {
+                padding: 100px;
                 h2 {
-                    padding: 30px;
-                    font-weight: 600;
-                    font-size: 30px;
+                    font-size: $titleSize;
+                    @include mobile {
+                        font-size: $titleSizeMobile;
+                    }
                 }
-                ul {
-                    padding: 30px;
-                    li {
-                        margin: 10px;
-                        //padding-left: 30px;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 20px;
+                h2::after {
+                    content: "";
+                    display: block;
+                    position: relative;
+                    top: -5px;
+                    width: auto;
+                    height: 1px;
+                    margin-top: 46px;
+                    //margin-left: 20px;
+                    background: #fff;
+                    opacity: 60%;
+                }
+            }
+            .blocs {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                @include mobile {
+                    flex-direction: column;
+                }
+                .container {
+                    position: relative;
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background: #101F38;
+                    border-radius: 5px;
+                    margin: 40px;
+                    -webkit-font-smoothing: antialiased;
+                    h2 {
+                        padding: 30px;
+                        font-weight: 600;
+                        font-size: 30px;
+                    }
+                    ul {
+                        padding: 30px;
+                        li {
+                            margin: 10px;
+                            //padding-left: 30px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 20px;
+                        }
                     }
                 }
             }
         }
     }
-}

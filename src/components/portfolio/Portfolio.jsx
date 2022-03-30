@@ -51,7 +51,7 @@ export default function Portfolio() {
                                     </div>
                                     <div className="bottom">
                                         <ul className="project-tech-list">
-                                            <li>{item.tech}</li>
+                                            {item.tech.map((t) => <li>{t}</li>)}
                                         </ul>
                                     </div>
                                 </div>
