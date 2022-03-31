@@ -3,8 +3,12 @@ import { useState } from 'react';
 import {
   Animator,
   ScrollContainer,
+  MoveOut,
+  Fade,
+  batch,
   ScrollPage,
-  Sticky
+  Sticky,
+  Zoom
 } from 'react-scroll-motion';
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
@@ -22,18 +26,14 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-        <ScrollContainer>
-          <Animator animations={Sticky(20, 30)}>
 
-            <Intro />
-            <About />
-            <Technologies />
-            <Portfolio />
-            <Contact />
-          </Animator>
-        </ScrollContainer>
+        <Intro />
+        <About />
+        <Technologies />
+        <Portfolio />
+        <Contact />
       </div>
-    </div>
+    </div >
   );
 
 }
