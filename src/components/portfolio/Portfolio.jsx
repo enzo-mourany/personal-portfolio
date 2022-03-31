@@ -1,6 +1,7 @@
 import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Portfolio() {
     return (
@@ -12,7 +13,10 @@ export default function Portfolio() {
                 <section className="container">
                     <ul className="project-grid">
                         {featuredPortfolio.map((item) => (
-                            <li className="item" >
+                            <motion.li
+                                className="item"
+                                whileHover={{ translateY: -10 }}
+                            >
                                 <div className="project-inner">
                                     <div className="top">
                                         <div className="project-top">
@@ -53,7 +57,7 @@ export default function Portfolio() {
                                         </ul>
                                     </div>
                                 </div>
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
                 </section>

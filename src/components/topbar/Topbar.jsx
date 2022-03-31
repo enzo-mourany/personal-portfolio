@@ -1,7 +1,10 @@
 import "./topbar.scss";
+import { useState } from 'react';
+import { motion } from "framer-motion";
 import { LinkedIn, Mail, GitHub } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+    const [email, setEmail] = useState(false);
     return (
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
@@ -21,13 +24,17 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <Mail className="icon" />
                     </div>
                 </div>
-                <div className="right">
-                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                <motion.div className="right" whileHover={{ scale: 1.1 }}>
+                    <div
+                        className="hamburger"
+                        onClick={() => setMenuOpen(!menuOpen)}
+
+                    >
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

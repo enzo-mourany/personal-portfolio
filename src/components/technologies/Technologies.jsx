@@ -1,8 +1,10 @@
 import "./technologies.scss";
 import { frontendLanguages, backendLanguages, tools } from "../../data";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { motion } from "framer-motion";
 
 export default function Technologies() {
+
     return (
         <div className="technologies" id="technologies">
             <div className="wrapper">

@@ -8,7 +8,6 @@ export default function Intro({ setLoading }) {
     const variants = {
         visible: {
             opacity: 1,
-
             translateY: -30,
         },
         hidden: { opacity: 0, y: 30, },
@@ -61,23 +60,23 @@ export default function Intro({ setLoading }) {
                 <div className="wrapper">
 
                     <motion.h2
-                        style={{ originY: 20 }}
+                        //style={{ originY: 20 }}
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 1, duration: 1 }}
+                        transition={{ delay: 1.1, duration: 1, ease: "easeOut" }}
                     >Hi There, I'm</motion.h2>
                     <motion.h1
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 1.5, duration: 1 }}
+                        transition={{ delay: 1.3, duration: 1, ease: "easeOut" }}
                     >Enzo Mourany</motion.h1>
                     <motion.h3
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 2, duration: 1 }}
+                        transition={{ delay: 1.5, duration: 1, ease: "easeOut" }}
                     >Frontend Developer</motion.h3>
 
                 </div>
@@ -87,7 +86,7 @@ export default function Intro({ setLoading }) {
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 2.5, duration: 1.5 }}
+                        transition={{ delay: 2, duration: 1.5, ease: "easeOut" }}
                     >
                         <a className="learnMoreBtn" href="#about">
                             Learn More
@@ -98,7 +97,7 @@ export default function Intro({ setLoading }) {
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 2.7, duration: 1.5 }}
+                        transition={{ delay: 2.2, duration: 1.5, ease: "easeOut" }}
                     >
                         <a href="#">Download CV</a>
                     </motion.div>

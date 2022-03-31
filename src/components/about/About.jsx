@@ -1,13 +1,26 @@
 import "./about.scss";
+import { motion } from "framer-motion";
 
 export default function About() {
+    const variants = {
+        visible: {
+            opacity: 1,
+            translateY: -30,
+        },
+        hidden: { opacity: 0, y: 30, },
+    }
     return (
         <div className="about" id="about">
             <div className="wrapper">
                 <div className="right">
                 </div>
                 <div className="left">
-                    <h2>About Me</h2>
+                    <motion.h2
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{ delay: 1.1, duration: 1, ease: "easeOut" }}
+                    >About Me</motion.h2>
                     <p>
                         I’m french developer and first year computer science
                         student. I working on web 3.0 projects with
