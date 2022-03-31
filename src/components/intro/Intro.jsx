@@ -4,6 +4,12 @@ import { useEffect } from "react";
 
 export default function Intro({ setLoading }) {
 
+
+    const variants = {
+        visible: { opacity: 1, transition: { duration: 3 } },
+        hidden: { opacity: 0 },
+    }
+
     const container = {
         show: {
             transition: {
@@ -31,39 +37,51 @@ export default function Intro({ setLoading }) {
             },
         },
     };
-    /*
-        const loader = ({ setLoading }) => {
-            useEffect(() => {
-                const timer = setTimeout(() => {
-                    setLoading(false);
-                }, 4000);
-                return () => clearTimeout(timer);
-            });
-    
-            return ()
-        }
-        */
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 4000);
+        return () => clearTimeout(timer);
+    });
 
     return (
-        <div className="intro" id="intro">
+        <motion.div className="intro" id="intro">
             <div className="left">
             </div>
             <motion.div
                 className="right"
-                variants={container}
-                onAnimationComplete={() => setLoading(false)}
-                initial="hidden"
-                animate="show"
-                exit="exit"
+
             >
                 <div className="wrapper">
-                    <h2>Hi There, I'm</h2>
-                    <h1>Enzo Mourany</h1>
-                    <h3>
-                        Frontend Developer
-                    </h3>
+
+                    <motion.h2
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{ delay: 1 }}
+                    >Hi There, I'm</motion.h2>
+                    <motion.h1
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{ delay: 2 }}
+                    >Enzo Mourany</motion.h1>
+                    <motion.h3
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{ delay: 3 }}
+                    >Frontend Developer</motion.h3>
+
                 </div>
-                <div className="buttons">
+                <motion.div className="buttons"
+                    variants={container}
+                    onAnimationComplete={() => setLoading(false)}
+                    initial="hidden"
+                    animate="show"
+                    exit="exit">
                     <div className="learnMore" variants={item}>
                         <a className="learnMoreBtn" href="#about">
                             Learn More
@@ -72,10 +90,10 @@ export default function Intro({ setLoading }) {
                     <div className="downloadPdf">
                         <a href="#">Download CV</a>
                     </div>
-                </div>
+                </motion.div>
             </motion.div>
 
-        </div>
+        </motion.div>
 
     )
 }
