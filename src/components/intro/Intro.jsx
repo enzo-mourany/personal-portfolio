@@ -8,10 +8,10 @@ export default function Intro({ setLoading }) {
     const variants = {
         visible: {
             opacity: 1,
-            y: 30,
+
             translateY: -30,
         },
-        hidden: { opacity: 0 },
+        hidden: { opacity: 0, y: 30, },
     }
 
     const container = {
@@ -87,7 +87,7 @@ export default function Intro({ setLoading }) {
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 2.5, duration: 1 }}
+                        transition={{ delay: 2.5, duration: 1.5 }}
                     >
                         <a className="learnMoreBtn" href="#about">
                             Learn More
@@ -98,7 +98,7 @@ export default function Intro({ setLoading }) {
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 2.7, duration: 1 }}
+                        transition={{ delay: 2.7, duration: 1.5 }}
                     >
                         <a href="#">Download CV</a>
                     </motion.div>
