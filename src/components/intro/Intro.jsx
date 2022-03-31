@@ -6,7 +6,11 @@ export default function Intro({ setLoading }) {
 
 
     const variants = {
-        visible: { opacity: 1, transition: { duration: 3 } },
+        visible: {
+            opacity: 1,
+            y: 30,
+            translateY: -30,
+        },
         hidden: { opacity: 0 },
     }
 
@@ -57,40 +61,48 @@ export default function Intro({ setLoading }) {
                 <div className="wrapper">
 
                     <motion.h2
+                        style={{ originY: 20 }}
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 1 }}
+                        transition={{ delay: 1, duration: 1 }}
                     >Hi There, I'm</motion.h2>
                     <motion.h1
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 2 }}
+                        transition={{ delay: 1.5, duration: 1 }}
                     >Enzo Mourany</motion.h1>
                     <motion.h3
                         initial="hidden"
                         animate="visible"
                         variants={variants}
-                        transition={{ delay: 3 }}
+                        transition={{ delay: 2, duration: 1 }}
                     >Frontend Developer</motion.h3>
 
                 </div>
-                <motion.div className="buttons"
-                    variants={container}
-                    onAnimationComplete={() => setLoading(false)}
-                    initial="hidden"
-                    animate="show"
-                    exit="exit">
-                    <div className="learnMore" variants={item}>
+                <div className="buttons">
+                    <motion.div
+                        className="learnMore"
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{ delay: 2.5, duration: 1 }}
+                    >
                         <a className="learnMoreBtn" href="#about">
                             Learn More
                         </a>
-                    </div>
-                    <div className="downloadPdf">
+                    </motion.div>
+                    <motion.div
+                        className="downloadPdf"
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={{ delay: 2.7, duration: 1 }}
+                    >
                         <a href="#">Download CV</a>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </motion.div>
 
         </motion.div>
