@@ -101,6 +101,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-color: transparent;
                 border: 1px solid $highlightColor;
                 border-radius: 7px;
                 margin-right: 40px;
@@ -111,7 +112,7 @@
                 .learnMoreBtn {
                     color: $highlightColor;
                     text-decoration: none;
-                    padding: 20px 50px;
+                    padding: 20px 30px;
                     font-size: 1.05rem;
                     margin: 8px;
                     font-family: SFMonoRegular;
@@ -121,10 +122,7 @@
                 }
             }
             .learnMore:hover {
-                background-color: $highlightColor;
-                a {
-                    color: $mainColor;
-                }
+                background-color: $green;
             }
             .downloadPdf {
                 display: flex;
@@ -137,7 +135,7 @@
                 a {
                     color: $highlightColor;
                     font-size: 1.05rem;
-                    padding: 20px 50px;
+                    padding: 20px 30px;
                     text-decoration: none;
                     font-family: SFMonoRegular;
                     margin: 8px;
@@ -147,10 +145,7 @@
                 }
             }
             .downloadPdf:hover {
-                background-color: $highlightColor;
-                a {
-                    color: $mainColor;
-                }
+                background-color: $green;
             }
         }
     }

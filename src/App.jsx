@@ -1,5 +1,11 @@
 import './app.scss';
 import { useState } from 'react';
+import {
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  Sticky
+} from 'react-scroll-motion';
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -16,11 +22,16 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-        <Intro />
-        <About />
-        <Technologies />
-        <Portfolio />
-        <Contact />
+        <ScrollContainer>
+          <Animator animations={Sticky(20, 30)}>
+
+            <Intro />
+            <About />
+            <Technologies />
+            <Portfolio />
+            <Contact />
+          </Animator>
+        </ScrollContainer>
       </div>
     </div>
   );
