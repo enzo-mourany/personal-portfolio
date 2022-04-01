@@ -34,6 +34,15 @@ export const featuredPortfolio = [{
         retex: "link-test",
         githubLink: "github-link test",
     },
+    {
+        id: 5,
+        title: "Storyboard",
+        img: "../public/PNG/tabata-app.png",
+        description: "Project for the IUT. Creation of an electric skateboard rental and sale business. Realization of the PESTEL analysis and its website. Team project",
+        tech: ["Shell", "HTML"],
+        retex: "link-test",
+        githubLink: "https://github.com/enzo-mourany/storyboard.git",
+    },
 ];
 
 export const frontendLanguages = [{

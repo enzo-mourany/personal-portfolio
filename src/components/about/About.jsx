@@ -15,12 +15,8 @@ export default function About() {
                 <div className="right">
                 </div>
                 <div className="left">
-                    <motion.h2
-                        initial="hidden"
-                        animate="visible"
-                        variants={variants}
-                        transition={{ delay: 1.1, duration: 1, ease: "easeOut" }}
-                    >About Me</motion.h2>
+                    <h2
+                    >About Me</h2>
                     <p>
                         I’m french developer and first year computer science
                         student. I working on web 3.0 projects with
