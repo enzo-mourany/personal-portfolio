@@ -2,7 +2,7 @@
     "name": "personal-portfolio",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://enzo-mourany.github.io/enzo-mourany.github.io",
+    "homepage": "https://enzo-mourany.github.io/",
     "dependencies": {
         "@material-ui/core": "^4.12.3",
         "@material-ui/icons": "^4.11.2",
@@ -22,8 +22,6 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "deploy": "gh-pages -d build",
-        "predeploy": "npm run build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
