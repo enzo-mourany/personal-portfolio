@@ -48,7 +48,7 @@ export const featuredPortfolio = [{
 export const frontendLanguages = [{
         id: 1,
         name: "Javascript",
-        level: 70,
+        level: 75,
     },
     {
         id: 2,
@@ -57,13 +57,13 @@ export const frontendLanguages = [{
     },
     {
         id: 3,
-        name: "React DOM",
-        level: 40,
+        name: "React JS",
+        level: 60,
     },
     {
         id: 4,
         name: "React Native",
-        level: 50,
+        level: 60,
     },
     {
         id: 5,
@@ -86,7 +86,7 @@ export const backendLanguages = [{
     {
         id: 2,
         name: "Java",
-        level: 40,
+        level: 50,
     },
     {
         id: 3,
@@ -102,6 +102,11 @@ export const backendLanguages = [{
         id: 5,
         name: "Python",
         level: 30,
+    },
+    {
+        id: 6,
+        name: "SQL",
+        level: 50,
     },
 ]
 

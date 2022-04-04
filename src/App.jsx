@@ -15,8 +15,7 @@ import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
-//import Contact from "./components/contact/Contact";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 
 
