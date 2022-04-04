@@ -16,7 +16,7 @@
         "react": "^17.0.2",
         "react-button": "^1.2.1",
         "react-dom": "^17.0.2",
-        "react-scripts": "5.0.0",
+        "react-scripts": "^5.0.0",
         "react-scroll-motion": "^0.2.6",
         "react-svg": "^14.1.14",
         "web-vitals": "^2.1.4"
