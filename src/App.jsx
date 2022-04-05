@@ -1,5 +1,5 @@
 import './app.scss';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Animator,
   ScrollContainer,
@@ -17,12 +17,13 @@ import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-//import Project from './components/project/Project';
+
 
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
+
     <div className="app" >
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -38,3 +39,6 @@ function App() {
 }
 
 export default App;
+
+
+// TODO: Add little bar right side = pages progression
