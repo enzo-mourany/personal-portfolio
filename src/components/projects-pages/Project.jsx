@@ -1,12 +1,15 @@
+import React, { useContext } from 'react';
 import "./project.scss";
 import "../portfolio/Portfolio";
 import { featuredPortfolio } from "../../data";
+import { SelectedProjectContext } from "../SelectedProjectContext";
 
-export default function Project({ project }) {
-    const title = featuredPortfolio[project].title;
+
+export default function Project() {
+    const selectedProject = useContext(SelectedProjectContext);
     return (
         <div className="project" id="project">
-            <p>{title}</p>
+            <p>{featuredPortfolio[selectedProject].title}</p>
         </div>
     )
 }

@@ -1,10 +1,11 @@
 import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { motion } from "framer-motion";
+import { SelectedProjectContext } from "../SelectedProjectContext";
 
 export default function Portfolio() {
-    const [selectedProject, setSelectedProject] = useState(0);
+    const setSelectedProject = useContext(SelectedProjectContext);
     return (
         <div className="portfolio" id="portfolio">
             <div className="wrapper">
@@ -48,6 +49,7 @@ export default function Portfolio() {
                                         <h3 className="project-title">
                                             <a href="../projects-pages/Project.jsx"
                                                 onClick={() => setSelectedProject(item.id)}>
+                                                {item.title}
                                             </a>
                                         </h3>
                                         <div className="project-description">
