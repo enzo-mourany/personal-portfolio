@@ -46,7 +46,9 @@ export default function Portfolio() {
                                             </div>
                                         </div>
                                         <h3 className="project-title">
-                                            <a href="../projects-pages/Project.jsx" onClick={setProject(item.id)}>{item.title}</a>
+                                            <a href="../projects-pages/Project.jsx"
+                                                onClick={() => setProject(item.id)}>
+                                            </a>
                                         </h3>
                                         <div className="project-description">
                                             <p>{item.description}</p>
@@ -63,6 +65,6 @@ export default function Portfolio() {
                     </ul>
                 </section>
             </div>
-        </div>
+        </div >
     )
 }
