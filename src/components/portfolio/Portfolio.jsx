@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Portfolio() {
-    const [project, setProject] = useState(0);
+    const [selectedProject, setSelectedProject] = useState(0);
     return (
         <div className="portfolio" id="portfolio">
             <div className="wrapper">
@@ -47,7 +47,7 @@ export default function Portfolio() {
                                         </div>
                                         <h3 className="project-title">
                                             <a href="../projects-pages/Project.jsx"
-                                                onClick={() => setProject(item.id)}>
+                                                onClick={() => setSelectedProject(item.id)}>
                                             </a>
                                         </h3>
                                         <div className="project-description">
