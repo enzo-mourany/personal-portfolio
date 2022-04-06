@@ -8,16 +8,23 @@ export default function Contact() {
                 <div className="container">
                     <form action="">
                         <div className="formWord">
-                            <span>Full Name</span>
-                            <input type="text" className="inputName" name="fullName" required />
-                            <span>Phone Number</span>
-                            <input type="text" className="inputPhone" name="phone" required />
-                            <span>Enter Email</span>
-                            <input type="text" className="inputEmail" name="email" required />
+                            <div className="item">
+
+                                <span>Enter Full Name</span>
+                                <input type="text" className="inputName" name="fullName" required />
+                            </div>
+                            <div className="item">
+                                <span>Enter Email</span>
+                                <input type="text" className="inputEmail" name="email" required />
+
+                            </div>
                         </div>
                         <div className="formWord">
-                            <span>Message</span>
-                            <input type="text" className="inputMessage" name="message" required />
+                            <div className="item">
+
+                                <span>Message</span>
+                                <input type="text" className="inputMessage" name="message" required />
+                            </div>
                         </div>
                     </form>
                 </div>

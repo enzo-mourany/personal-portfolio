@@ -30,5 +30,35 @@
 }
 
 .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     //background-color: $mainColor;
+    .wrapper {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            .formWord {
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                    width: 100%;
+                    span {
+                        margin-bottom: 15px;
+                    }
+                    input {
+                        padding: 10px;
+                        width: 100%;
+                        background-color: rgba(32, 33, 36, .1);
+                        border: 1px solid rgba(255, 255, 255, .3);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
 }
