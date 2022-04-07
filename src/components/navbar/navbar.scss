@@ -1,0 +1,73 @@
+@import "../../global.scss";
+.navbar {
+    position: fixed;
+    right: 30px;
+    bottom: 30%;
+    z-index: 9;
+    .menlist {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        cursor: default;
+        li {
+            position: relative;
+            display: block;
+            margin: 25px 16px;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            @include mobile {
+                width: 5px;
+                height: 5px;
+            }
+            a {
+                top: 0;
+                left: 0;
+                padding: unset!important;
+                width: 100%;
+                height: 100%;
+                outline: none;
+                border-radius: 100%;
+                border: 1px solid $textColorDarkMode;
+                background-color: transparent;
+                text-indent: -999em;
+                cursor: pointer;
+                position: relative;
+                -webkit-transition: -webkit-transform .3s ease, background-color .3s ease;
+                transition: transform .3s ease, background-color .3s ease;
+            }
+            a:hover {
+                border: 3px solid red;
+                background-color: green;
+            }
+            a:before {
+                width: 30px;
+                content: '';
+                position: absolute;
+                height: 30px;
+                border-radius: 100%;
+                top: -13px;
+                left: -13px;
+                opacity: 0;
+                background: green;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                @include mobile {
+                    width: 20px;
+                    height: 20px;
+                    top: -10px;
+                    left: -10px;
+                }
+            }
+            &.active {
+                border: 3px solid red;
+                background-color: green;
+            }
+            &.active::before {
+                opacity: 1;
+            }
+        }
+    }
+}

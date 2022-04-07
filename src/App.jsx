@@ -17,16 +17,18 @@ import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedPage, setSelectedPage] = useState(false);
   return (
 
     <div className="app" >
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className="sections">
         <Intro />
         <About />
