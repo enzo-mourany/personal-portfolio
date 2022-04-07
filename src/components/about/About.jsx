@@ -12,11 +12,9 @@ export default function About() {
     return (
         <div className="about" id="about">
             <div className="wrapper">
-                <div className="right">
-                </div>
-                <div className="left">
-                    <h2
-                    >About Me</h2>
+                <span className="big-text">ABOUT ME</span>
+                <div className="container">
+                    <h2><span>Profesional</span> Profile</h2>
                     <p>
                         I’m french developer and first year computer science
                         student. I working on web 3.0 projects with

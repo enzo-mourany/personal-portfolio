@@ -37,9 +37,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         height: 100%;
         width: 65%;
-        .left {
+        .big-text {
+            //position: absolute;
+            font-size: 150px;
+            white-space: nowrap;
+            letter-spacing: 10px;
+            font-weight: 800;
+            font-family: poppins;
+            color: transparent;
+            opacity: 60%;
+            -webkit-text-stroke: 1px $textColorDarkMode;
+            //left: 50%;
+            //transform: translate(-50%, -50%);
+        }
+        .container {
             width: 50%;
             text-align: justify;
             text-justify: inter-word;
@@ -51,11 +65,14 @@
             }
             h2 {
                 margin-bottom: 40px;
-                font-weight: 600;
+                font-family: CalibreLight;
                 font-size: $titleSize;
+                font-weight: 500;
                 letter-spacing: 1px;
-                font-family: CalibreSemiBold;
                 color: $textColorDarkMode;
+                span {
+                    font-weight: 600;
+                }
                 @include mobile {
                     font-size: $titleSizeMobile;
                 }
