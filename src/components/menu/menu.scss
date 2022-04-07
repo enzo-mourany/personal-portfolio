@@ -46,6 +46,9 @@
                 text-decoration: none;
                 -webkit-text-stroke: 1px $textColorDarkMode;
                 transition: all 0.3s ease;
+                @include mobile {
+                    font-size: 35px;
+                }
             }
             a:hover {
                 color: $highlightColor;
