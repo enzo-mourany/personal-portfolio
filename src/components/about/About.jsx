@@ -4,27 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function About() {
-    const variants = {
-        visible: {
-            opacity: 1,
-            translateY: -30,
-        },
-        hidden: { opacity: 0, y: 30, },
-    }
-
-    useEffect(() => {
-        AOS.init({
-            offset: 100,
-            duration: 1000,
-            easing: 'ease',
-        });
-    });
-
+    AOS.init();
+    AOS.refresh();
     return (
         <div className="about" id="about">
             <div className="wrapper">
                 <span className="big-text">ABOUT ME</span>
-                <div className="container" data-aos="fade-up">
+                <div className="container" data-aos="fade-up" >
                     <h2><span>Profesional</span> Profile</h2>
                     <p>
                         I’m french developer and first year computer science

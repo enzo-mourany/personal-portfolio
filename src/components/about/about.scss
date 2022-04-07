@@ -30,7 +30,6 @@
 }
 
 .about {
-    //background-color: $mainColor;
     display: flex;
     justify-content: center;
     .wrapper {
@@ -40,6 +39,7 @@
         flex-direction: column;
         height: 100%;
         width: 65%;
+        overflow: hidden;
         -webkit-font-smoothing: antialiased;
         .big-text {
             //position: absolute;
@@ -51,8 +51,6 @@
             color: transparent;
             opacity: 60%;
             -webkit-text-stroke: 1px $textColorDarkMode;
-            //left: 50%;
-            //transform: translate(-50%, -50%);
         }
         .container {
             width: 50%;
