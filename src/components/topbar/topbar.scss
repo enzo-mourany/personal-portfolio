@@ -58,7 +58,22 @@
                 color: inherit;
                 margin-right: 40px;
                 opacity: 60%;
+                letter-spacing: 1px;
                 font-family: poppins, sans-serif;
+            }
+            .logo::after {
+                content: "";
+                display: block;
+                position: relative;
+                top: -7px;
+                width: 0%;
+                height: 3px;
+                background: #fff;
+                opacity: 60%;
+                transition: .3s ease-in-out;
+            }
+            .logo:hover::after {
+                width: 100%;
             }
             .itemContainer {
                 display: flex;
@@ -86,13 +101,14 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                align-items: center;
                 cursor: pointer;
                 span {
                     width: 100%;
                     height: 3px;
                     background-color: $highlightColor;
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 1s ease;
                 }
             }
         }
