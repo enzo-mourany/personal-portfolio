@@ -1,5 +1,7 @@
+import React, { useEffect } from "react";
 import "./about.scss";
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
     const variants = {
@@ -9,11 +11,20 @@ export default function About() {
         },
         hidden: { opacity: 0, y: 30, },
     }
+
+    useEffect(() => {
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            easing: 'ease',
+        });
+    });
+
     return (
         <div className="about" id="about">
             <div className="wrapper">
                 <span className="big-text">ABOUT ME</span>
-                <div className="container">
+                <div className="container" data-aos="fade-up">
                     <h2><span>Profesional</span> Profile</h2>
                     <p>
                         I’m french developer and first year computer science
