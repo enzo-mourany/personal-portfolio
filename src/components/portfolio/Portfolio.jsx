@@ -13,6 +13,7 @@ export default function Portfolio() {
                 <section className="container">
                     <div className="title">
                         <h2>My <span>Works</span></h2>
+                        <p>Some of my personal projects and for studies</p>
                     </div>
                     <ul className="project-grid">
                         {featuredPortfolio.map((item) => (
