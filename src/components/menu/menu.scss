@@ -45,14 +45,10 @@
                 letter-spacing: 2px;
                 text-decoration: none;
                 -webkit-text-stroke: 1px $textColorDarkMode;
-                transition: all 0.3s ease;
+                transition: all 0.2s ease;
                 @include mobile {
                     font-size: 35px;
                 }
-            }
-            a:hover {
-                color: $highlightColor;
-                -webkit-text-stroke: 1px $highlightColor;
             }
             a::after {
                 content: "";
@@ -64,6 +60,12 @@
                 margin-top: 16px;
                 background: #fff;
                 opacity: 60%;
+            }
+        }
+        li:hover {
+            a {
+                color: $highlightColor;
+                -webkit-text-stroke: 1px $highlightColor;
             }
         }
     }
