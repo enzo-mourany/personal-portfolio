@@ -9,10 +9,11 @@ export default function Portfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <div className="wrapper">
-                <div className="title">
-                    <h2>Portfolio</h2>
-                </div>
+                <span className="big-text">PORTFOLIO</span>
                 <section className="container">
+                    <div className="title">
+                        <h2>My <span>Works</span></h2>
+                    </div>
                     <ul className="project-grid">
                         {featuredPortfolio.map((item) => (
                             <motion.li
