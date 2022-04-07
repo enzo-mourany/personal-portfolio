@@ -71,13 +71,13 @@ export default function Intro({ setLoading }) {
                         animate="visible"
                         variants={variants}
                         transition={{ delay: 1.3, duration: 1, ease: "easeOut" }}
-                    >Enzo Mourany</motion.h1>
+                    ><span>Enzo</span> Mourany</motion.h1>
                     <motion.h3
                         initial="hidden"
                         animate="visible"
                         variants={variants}
                         transition={{ delay: 1.5, duration: 1, ease: "easeOut" }}
-                    >Frontend Developer</motion.h3>
+                    >French / Frontend Developer</motion.h3>
 
                 </div>
                 <div className="buttons">

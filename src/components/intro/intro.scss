@@ -29,6 +29,7 @@
     font-weight: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .intro {
     //background-color: $mainColor;
     display: flex;
@@ -63,26 +64,31 @@
                 letter-spacing: 1px;
                 font-size: 90px;
                 color: $textColorDarkMode;
-                font-weight: 600;
-                font-family: CalibreSemiBold;
+                font-family: poppins, sans-serif;
+                font-size: 80px;
+                font-weight: 200;
+                span {
+                    font-weight: 700;
+                }
                 @include mobile {
                     font-size: 40px;
                 }
             }
             h2 {
-                font-weight: 400;
-                font-size: 20px;
-                font-family: SFMonoRegular;
+                font-weight: 800;
+                font-family: poppins, sans-serif;
+                font-size: 120px;
                 padding-bottom: 30px;
-                color: $highlightColor;
+                letter-spacing: 6px;
+                color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgba(255, 255, 255, .2);
             }
             h3 {
-                letter-spacing: 1px;
-                font-size: 90px;
-                opacity: 70%;
-                color: $textColorDarkMode;
-                font-weight: 600;
-                font-family: CalibreSemiBold;
+                font-size: 45px;
+                color: $highlightColor;
+                font-family: poppins, sans-serif;
+                font-weight: 400;
                 @include mobile {
                     font-size: 20px;
                 }
@@ -103,7 +109,7 @@
                 align-items: center;
                 background-color: transparent;
                 border: 1px solid $highlightColor;
-                border-radius: 7px;
+                border-radius: 5px;
                 margin-right: 40px;
                 transition: all 0.3s ease;
                 @include mobile {
@@ -112,7 +118,7 @@
                 .learnMoreBtn {
                     color: $highlightColor;
                     text-decoration: none;
-                    padding: 20px 30px;
+                    padding: 12px 15px;
                     font-size: 1.05rem;
                     margin: 8px;
                     font-family: SFMonoRegular;
@@ -127,7 +133,7 @@
             .downloadPdf {
                 display: flex;
                 border: 1px solid $highlightColor;
-                border-radius: 7px;
+                border-radius: 5px;
                 margin-right: 40px;
                 justify-content: center;
                 align-items: center;
@@ -135,7 +141,7 @@
                 a {
                     color: $highlightColor;
                     font-size: 1.05rem;
-                    padding: 20px 30px;
+                    padding: 12px 15px;
                     text-decoration: none;
                     font-family: SFMonoRegular;
                     margin: 8px;
