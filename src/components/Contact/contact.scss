@@ -33,11 +33,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //background-color: $mainColor;
+    padding-bottom: 100px;
+    padding-top: 70px;
     .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width: 65%;
+        padding-top: 70px;
+        .big-text {
+            font-size: 150px;
+            white-space: nowrap;
+            letter-spacing: 10px;
+            font-weight: 800;
+            font-family: poppins;
+            color: transparent;
+            opacity: 30%;
+            -webkit-text-stroke: 1px $textColorDarkMode;
+            top: 18%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            @include mobile {
+                font-size: 40px;
+            }
+        }
         .container {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            text-align: justify;
+            text-justify: inter-word;
+            margin: 50px;
+            .text {
+                margin-bottom: 60px;
+                h2 {
+                    text-align: center;
+                    margin-bottom: 7px;
+                    font-family: CalibreLight;
+                    font-size: $titleSize;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    color: $textColorDarkMode;
+                    span {
+                        font-weight: 600;
+                    }
+                    @include mobile {
+                        font-size: 22px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+            }
             .formWord {
                 display: flex;
                 flex-direction: row;
