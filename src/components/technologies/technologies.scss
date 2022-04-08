@@ -37,25 +37,45 @@
             align-items: center;
             flex-direction: column;
             height: 90%;
-            .title {
-                padding: 100px;
-                h2 {
-                    font-size: $titleSize;
-                    @include mobile {
-                        font-size: $titleSizeMobile;
-                    }
+            padding-top: 90px;
+            position: relative;
+            .big-text {
+                position: absolute;
+                font-size: 150px;
+                white-space: nowrap;
+                letter-spacing: 10px;
+                font-weight: 800;
+                font-family: poppins;
+                color: transparent;
+                opacity: 30%;
+                -webkit-text-stroke: 1px $textColorDarkMode;
+                top: 10%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include mobile {
+                    font-size: 40px;
                 }
-                h2::after {
-                    content: "";
-                    display: block;
-                    position: relative;
-                    top: -5px;
-                    width: auto;
-                    height: 1px;
-                    margin-top: 46px;
-                    //margin-left: 20px;
-                    background: #fff;
-                    opacity: 60%;
+            }
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 40px;
+                h2 {
+                    text-align: center;
+                    //margin-bottom: 7px;
+                    font-family: CalibreLight;
+                    font-size: $titleSize;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    color: $textColorDarkMode;
+                    span {
+                        font-weight: 600;
+                    }
+                    @include mobile {
+                        font-size: 22px;
+                    }
                 }
             }
             .blocs {
