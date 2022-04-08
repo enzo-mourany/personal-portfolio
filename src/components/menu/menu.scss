@@ -28,13 +28,14 @@
         }
     }
     ul {
+        padding-top: 50px;
         margin: 0;
-        padding: 0;
+        //padding: 0;
         list-style: none;
         font-size: 24px;
         font-weight: 200;
         color: white;
-        width: 60%;
+        width: 80%;
         li {
             margin-bottom: 25px;
             a {
@@ -47,7 +48,7 @@
                 -webkit-text-stroke: 1px $textColorDarkMode;
                 transition: all 0.2s ease;
                 @include mobile {
-                    font-size: 35px;
+                    font-size: 30px;
                 }
             }
             a::after {
