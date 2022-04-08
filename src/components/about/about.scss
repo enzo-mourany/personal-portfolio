@@ -32,6 +32,8 @@
 .about {
     display: flex;
     justify-content: center;
+    position: relative;
+    overflow-x: hidden;
     padding-bottom: 100px;
     padding-top: 70px;
     .wrapper {

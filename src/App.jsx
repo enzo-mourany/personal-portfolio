@@ -19,7 +19,6 @@ import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Navbar from './components/navbar/Navbar';
 
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState(false);
