@@ -31,43 +31,43 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .topbar {
-    width: 100%;
-    height: 70px;
-    background-color: $mainColor;
-    color: $highlightColor;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    transition: all 1s ease;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 3;
+    background-color: $mainColor;
+    color: $highlightColor;
+    transition: all 1s ease;
     .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         margin: 10px 30px !important;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         .left {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             .logo {
+                margin-right: 40px;
                 font-size: 30px;
                 font-weight: 300;
                 text-decoration: none;
-                color: inherit;
-                margin-right: 40px;
-                opacity: 60%;
                 letter-spacing: 1px;
+                color: inherit;
+                opacity: 60%;
                 font-family: poppins, sans-serif;
             }
             .logo::after {
-                content: "";
                 display: block;
                 position: relative;
-                top: -7px;
+                content: "";
                 width: 0%;
                 height: 3px;
+                top: -7px;
                 background: #fff;
                 opacity: 60%;
                 transition: .3s ease-in-out;
@@ -84,8 +84,8 @@
                     display: none;
                 }
                 .icon {
-                    font-size: 22px;
                     margin-right: 5px;
+                    font-size: 22px;
                     opacity: 60%;
                     transition: all 0.3s ease;
                 }
@@ -96,12 +96,12 @@
         }
         .right {
             .hamburger {
-                width: 32px;
-                height: 25px;
                 display: flex;
-                flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                flex-direction: column;
+                width: 32px;
+                height: 25px;
                 cursor: pointer;
                 span {
                     width: 100%;
