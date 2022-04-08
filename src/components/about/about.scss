@@ -39,28 +39,28 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
         height: 100%;
         width: 65%;
         padding-top: 70px;
         overflow: hidden;
-        position: relative;
         -webkit-font-smoothing: antialiased;
         @include mobile {
             width: 90%;
         }
         .big-text {
-            font-size: 150px;
+            position: absolute;
             white-space: nowrap;
-            letter-spacing: 10px;
-            font-weight: 800;
-            font-family: poppins;
-            color: transparent;
-            opacity: 30%;
-            -webkit-text-stroke: 1px $textColorDarkMode;
             top: 15%;
             left: 50%;
+            font-size: 150px;
+            font-weight: 800;
+            font-family: poppins;
+            letter-spacing: 10px;
+            color: transparent;
+            opacity: 30%;
             transform: translate(-50%, -50%);
-            position: absolute;
+            -webkit-text-stroke: 1px $textColorDarkMode;
             @include mobile {
                 font-size: 40px;
             }
@@ -71,16 +71,16 @@
             align-items: center;
             flex-direction: column;
             width: 70%;
+            margin: 50px;
             text-align: justify;
             text-justify: inter-word;
-            margin: 50px;
             @include mobile {
                 width: 100%;
                 margin: 10px;
             }
             h2 {
-                text-align: center;
                 margin-bottom: 40px;
+                text-align: center;
                 font-family: CalibreLight;
                 font-size: $titleSize;
                 font-weight: 500;
@@ -94,14 +94,13 @@
                 }
             }
             h2::after {
-                content: "";
                 display: block;
                 position: relative;
+                content: "";
+                margin-top: 16px;
                 top: -5px;
                 width: 300px;
                 height: 1px;
-                margin-top: 16px;
-                //margin-left: 20px;
                 background: #fff;
                 opacity: 60%;
             }
