@@ -10,7 +10,7 @@ export default function About() {
         <div className="about" id="about">
             <div className="wrapper">
                 <span className="big-text">ABOUT ME</span>
-                <div className="container" data-aos="fade-up" >
+                <div className="container">
                     <h2><span>Profesional</span> Profile</h2>
                     <p>
                         I’m french developer and first year computer science

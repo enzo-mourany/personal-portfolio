@@ -24,9 +24,11 @@
             }
             a {
                 display: block;
-                padding: 0.5rem 1rem;
-                color: #0d6efd;
                 text-decoration: none;
+                position: relative;
+                line-height: 1rem;
+                //padding: 0.5rem 1rem;
+                color: #0d6efd;
                 transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
                 top: 0;
                 left: 0;
@@ -38,8 +40,8 @@
                 border: 1px solid $textColorDarkMode;
                 background-color: transparent;
                 text-indent: -999em;
+                font-size: 1.5rem;
                 cursor: pointer;
-                position: relative;
                 -webkit-transition: -webkit-transform .3s ease, background-color .3s ease;
                 transition: transform .3s ease, background-color .3s ease;
                 &.active {
@@ -55,15 +57,17 @@
                 background-color: green;
             }
             a:before {
-                width: 30px;
                 content: "";
                 position: absolute;
-                height: 30px;
-                border-radius: 100%;
-                top: -13px;
-                left: -13px;
-                opacity: 0;
                 background: green;
+                width: 20px;
+                height: 20px;
+                left: -3px;
+                top: 50%;
+                transform: translateX(-50%);
+                border-radius: 100%;
+                border: 3px solid red;
+                //opacity: 0;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 @include mobile {

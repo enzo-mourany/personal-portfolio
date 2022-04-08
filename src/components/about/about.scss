@@ -32,6 +32,8 @@
 .about {
     display: flex;
     justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 70px;
     .wrapper {
         display: flex;
         justify-content: center;
@@ -39,29 +41,45 @@
         flex-direction: column;
         height: 100%;
         width: 65%;
+        padding-top: 70px;
         overflow: hidden;
+        position: relative;
         -webkit-font-smoothing: antialiased;
+        @include mobile {
+            width: 90%;
+        }
         .big-text {
-            //position: absolute;
             font-size: 150px;
             white-space: nowrap;
             letter-spacing: 10px;
             font-weight: 800;
             font-family: poppins;
             color: transparent;
-            opacity: 60%;
+            opacity: 30%;
             -webkit-text-stroke: 1px $textColorDarkMode;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            @include mobile {
+                font-size: 40px;
+            }
         }
         .container {
-            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70%;
             text-align: justify;
             text-justify: inter-word;
             margin: 50px;
             @include mobile {
-                width: 90%;
+                width: 100%;
                 margin: 10px;
             }
             h2 {
+                text-align: center;
                 margin-bottom: 40px;
                 font-family: CalibreLight;
                 font-size: $titleSize;
@@ -72,7 +90,7 @@
                     font-weight: 600;
                 }
                 @include mobile {
-                    font-size: $titleSizeMobile;
+                    font-size: 22px;
                 }
             }
             h2::after {
@@ -88,9 +106,11 @@
                 opacity: 60%;
             }
             p {
+                text-align: center;
                 font-size: $textSize;
                 line-height: 1.3em;
-                font-family: CalibreMedium;
+                font-family: CalibreLight;
+                letter-spacing: 0.5px;
                 color: $textColorDarkMode;
                 opacity: 70%;
                 @include mobile {
