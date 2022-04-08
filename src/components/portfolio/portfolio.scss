@@ -39,20 +39,20 @@
     padding-bottom: 100px;
     padding-top: 100px;
     .wrapper {
-        padding-top: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100%;
         position: relative;
+        height: 100%;
+        padding-top: 90px;
         .big-text {
             position: absolute;
-            font-size: 150px;
             white-space: nowrap;
-            letter-spacing: 10px;
+            font-size: 150px;
             font-weight: 800;
             font-family: poppins;
+            letter-spacing: 10px;
             color: transparent;
             opacity: 30%;
             -webkit-text-stroke: 1px $textColorDarkMode;
@@ -66,10 +66,10 @@
         .container {
             display: flex;
             justify-content: center;
-            -webkit-box-align: center;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
             height: 100%;
+            -webkit-box-align: center;
             @include mobile {
                 padding: 16px 0px;
             }
@@ -81,7 +81,6 @@
                 margin-bottom: 40px;
                 h2 {
                     text-align: center;
-                    //margin-bottom: 7px;
                     font-family: CalibreLight;
                     font-size: $titleSize;
                     font-weight: 500;
@@ -102,75 +101,73 @@
                 }
             }
             .project-grid {
+                display: grid;
+                box-sizing: inherit;
+                position: relative;
+                list-style: none;
                 width: 900px;
                 height: 100%;
                 padding: 10px;
-                list-style: none;
                 margin: 50px 0px 0px;
-                display: grid;
-                position: relative;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 grid-gap: 15px;
-                box-sizing: inherit;
-                //padding-inline-start: 0px;
                 transition: all 0.25s ease-in-out 0s;
                 @include mobile {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
                 }
                 .item {
                     display: flex;
                     text-align: -webkit-match-parent;
-                    //padding: 10px;
-                    transition: all 0.25s ease-in-out 0s;
                     height: 340px;
+                    transition: all 0.25s ease-in-out 0s;
                     @include mobile {
                         width: 400px;
                     }
                     .project-inner {
                         display: flex;
-                        -webkit-box-pack: justify;
                         justify-content: space-between;
-                        -webkit-box-align: center;
-                        flex-direction: column;
                         align-items: flex-start;
+                        flex-direction: column;
                         position: relative;
                         height: auto;
                         padding: 2rem 1.75rem;
                         border-radius: 3px;
                         background-color: $secondaryColor;
+                        -webkit-box-pack: justify;
+                        -webkit-box-align: center;
                         -webkit-font-smoothing: antialiased;
                         .top {
                             display: block;
                             .project-top {
                                 display: flex;
-                                -webkit-box-pack: justify;
                                 justify-content: space-between;
-                                -webkit-box-align: center;
                                 align-items: center;
                                 margin-bottom: 35px;
                                 height: auto;
+                                -webkit-box-pack: justify;
+                                -webkit-box-align: center;
                                 .folder {
                                     svg {
-                                        stroke: $highlightColor;
                                         width: 40px;
                                         height: 40px;
+                                        stroke: $highlightColor;
                                     }
                                 }
                                 .project-links {
                                     display: flex;
-                                    -webkit-box-align: center;
                                     align-items: center;
                                     margin-right: -10px;
+                                    -webkit-box-align: center;
                                     a {
                                         display: flex;
-                                        -webkit-box-pack: center;
                                         justify-content: center;
-                                        -webkit-box-align: center;
                                         align-items: center;
                                         padding: 5px 7px;
+                                        -webkit-box-pack: center;
+                                        -webkit-box-align: center;
                                         svg {
                                             width: 20px;
                                             height: 20px;
@@ -179,7 +176,6 @@
                                     a:hover {
                                         svg {
                                             stroke: $highlightColor;
-                                            //transition: all 0.3s ease;
                                         }
                                     }
                                 }
@@ -196,8 +192,8 @@
                             }
                             .project-description {
                                 font-size: 17px;
-                                opacity: 70%;
                                 font-family: CalibreLight;
+                                opacity: 70%;
                             }
                         }
                         .bottom {
@@ -206,25 +202,24 @@
                             .project-tech-list {
                                 display: flex;
                                 align-items: flex-end;
-                                -webkit-box-flex: 1;
-                                flex-grow: 1;
                                 flex-wrap: wrap;
+                                flex-grow: 1;
                                 padding-inline-start: 0px;
                                 margin: 20px 0px 0px;
                                 list-style: none;
+                                -webkit-box-flex: 1;
                                 li {
                                     display: list-item;
-                                    text-align: -webkit-match-parent;
-                                    opacity: 40%;
                                     margin-right: 25px;
+                                    text-align: -webkit-match-parent;
                                     font-family: SFMonoRegular;
                                     font-size: 14px;
+                                    opacity: 40%;
                                 }
                             }
                         }
                     }
                     .project-inner:hover {
-                        //top: -10px;
                         .top {
                             .project-title {
                                 a {
