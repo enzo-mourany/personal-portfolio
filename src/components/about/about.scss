@@ -88,6 +88,8 @@
                 font-weight: 500;
                 letter-spacing: 1px;
                 color: $textColorDarkMode;
+                transition: all 1.2s ease;
+                transition-delay: 100ms;
                 span {
                     font-weight: 600;
                 }
@@ -114,7 +116,8 @@
                 letter-spacing: 0.5px;
                 color: $textColorDarkMode;
                 opacity: 70%;
-                animation-delay: 2s;
+                transition: all 1.2s ease;
+                transition-delay: 300ms;
                 @include mobile {
                     font-size: $textSizeMobile;
                 }
@@ -123,7 +126,6 @@
                 position: relative;
                 transform: translateY(150px);
                 opacity: 0;
-                transition: all 2s ease;
             }
             .reveal.active {
                 transform: translateY(0px);
