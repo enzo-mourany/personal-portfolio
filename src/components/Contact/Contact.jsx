@@ -13,22 +13,39 @@ export default function Contact() {
                     </div>
                     <form action="">
                         <div className="formWord">
-                            <div className="item">
+                            <div className="form-group">
+                                <div className="item">
 
-                                <span>Enter Full Name</span>
-                                <input type="text" className="inputName" name="fullName" required />
-                            </div>
-                            <div className="item">
-                                <span>Enter Email</span>
-                                <input type="text" className="inputEmail" name="email" required />
+                                    <span>Enter Full Name</span>
+                                    <input type="text"
+                                        className="inputName"
+                                        name="fullName"
+                                        placeholder="Your name"
+                                        required />
+                                </div>
+                                <div className="item">
+                                    <span>Enter Email</span>
+                                    <input type="text"
+                                        className="inputEmail"
+                                        name="email"
+                                        placeholder="Your email address"
+                                        required />
 
-                            </div>
-                        </div>
-                        <div className="formWord">
-                            <div className="item">
+                                </div>
+                                <div className="item">
 
-                                <span>Message</span>
-                                <input type="text" className="inputMessage" name="message" required />
+                                    <span>Message</span>
+                                    <textarea type="text"
+                                        className="inputMessage"
+                                        name="message"
+                                        placeholder="Your comment"
+                                        required />
+                                </div>
+                                <div className="item">
+                                    <button type="submit">
+                                        SUBMIT NOW
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </form>

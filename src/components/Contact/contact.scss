@@ -98,20 +98,55 @@
                 display: flex;
                 flex-direction: row;
                 margin: 10px;
-                .item {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 10px;
-                    width: 100%;
-                    span {
-                        margin-bottom: 15px;
-                    }
-                    input {
-                        padding: 10px;
+                flex-shrink: 0;
+                width: 100%;
+                max-width: 100%;
+                .form-group {
+                    padding: 0 20px 30px;
+                    background: rgba(32, 33, 36, .8);
+                    border-radius: 5px;
+                    border: 1px solid rgba(255, 255, 255, .1);
+                    .item {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px;
                         width: 100%;
-                        background-color: rgba(32, 33, 36, .1);
-                        border: 1px solid rgba(255, 255, 255, .3);
-                        border-radius: 3px;
+                        padding-top: 3rem!important;
+                        span {
+                            display: inline-block;
+                            margin-bottom: 15px;
+                        }
+                        input {
+                            padding: 10px;
+                            width: 600px;
+                            border: 1px solid rgba(255, 255, 255, .3);
+                            border-radius: 3px;
+                            color: white;
+                            background-color: rgba(32, 33, 36, .1);
+                            margin-top: 1rem!important;
+                            font-size: inherit;
+                            line-height: inherit;
+                        }
+                        textarea {
+                            height: 200px;
+                            padding: 10px;
+                            width: 100%;
+                            color: white;
+                            background-color: rgba(32, 33, 36, .1);
+                            border: 1px solid rgba(255, 255, 255, .3);
+                            border-radius: 3px;
+                        }
+                        button {
+                            background-color: transparent;
+                            width: 100%;
+                            border: 1px solid rgba(255, 255, 255, .3);
+                            padding: 10px;
+                            font-size: 15px;
+                            font-weight: 600;
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
                     }
                 }
             }
