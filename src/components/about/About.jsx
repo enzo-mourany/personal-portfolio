@@ -1,26 +1,23 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React, { Component, useRef } from "react";
+import useIntersection from '../useIntersection';
 import "./about.scss";
 
 
 export default function About() {
 
-    window.addEventListener('scroll', reveal);
+    const ref = useRef();
+    const inViewport = useIntersection(ref, '0px'); // Trigger as soon as the element becomes visible
 
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-        for (const element of reveals) {
-            var windowHeight = window.innerHeight;
-            var revealTop = element.getBoundingClientRect().top;
-            var revealPoint = 150;
-
-            if (revealTop < windowHeight - revealPoint) {
-                element.classList.add('active');
-            } else {
-                element.classList.remove('active');
-            }
+    var reveals = document.querySelectorAll('.reveal');
+    for (const element of reveals) {
+        if (inViewport) {
+            //console.log('in viewport:', ref.current);
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
         }
     }
+
 
 
     return (
@@ -31,7 +28,7 @@ export default function About() {
 
                     <h2 className="title reveal" ><span>Profesional</span> Profile</h2>
 
-                    <p>
+                    <p className="text-about reveal" ref={ref}>
                         I’m french developer and first year computer science
                         student. I working on web 3.0 projects with
                         technologies like React, Node JS and more.

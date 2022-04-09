@@ -114,22 +114,21 @@
                 letter-spacing: 0.5px;
                 color: $textColorDarkMode;
                 opacity: 70%;
+                animation-delay: 2s;
                 @include mobile {
                     font-size: $textSizeMobile;
                 }
             }
+            .reveal {
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: all 2s ease;
+            }
+            .reveal.active {
+                transform: translateY(0px);
+                opacity: 1;
+            }
         }
     }
-}
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-
-.reveal.active {
-    transform: translateY(0px);
-    opacity: 1;
 }

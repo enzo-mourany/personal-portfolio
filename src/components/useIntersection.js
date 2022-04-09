@@ -17,3 +17,5 @@ const useIntersection = (element, rootMargin) => {
 
     return isVisible;
 };
+
+export default useIntersection;
