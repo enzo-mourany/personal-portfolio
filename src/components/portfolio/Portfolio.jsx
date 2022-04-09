@@ -1,7 +1,6 @@
 import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
 import { useState, useContext } from "react";
-import { motion } from "framer-motion";
 import { SelectedProjectContext } from "../SelectedProjectContext";
 
 export default function Portfolio() {
@@ -17,7 +16,7 @@ export default function Portfolio() {
                     </div>
                     <ul className="project-grid">
                         {featuredPortfolio.map((item) => (
-                            <motion.li
+                            <li
                                 className="item"
                                 whileHover={{ translateY: -10 }}
                             >
@@ -64,7 +63,7 @@ export default function Portfolio() {
                                         </ul>
                                     </div>
                                 </div>
-                            </motion.li>
+                            </li>
                         ))}
                     </ul>
                 </section>
