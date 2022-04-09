@@ -44,9 +44,12 @@
         height: 100%;
         width: 65%;
         padding-top: 70px;
+        @include mobile {
+            width: 100%;
+        }
         .big-text {
             position: absolute;
-            top: 18%;
+            top: 9%;
             left: 50%;
             font-size: 150px;
             font-weight: 800;
@@ -97,10 +100,13 @@
             .formWord {
                 display: flex;
                 flex-direction: row;
-                margin: 10px;
+                margin: 20px;
                 flex-shrink: 0;
                 width: 100%;
                 max-width: 100%;
+                @include mobile {
+                    width: 400px;
+                }
                 .form-group {
                     padding: 0 20px 30px;
                     background: rgba(32, 33, 36, .5);
@@ -126,6 +132,9 @@
                             margin-top: 1rem!important;
                             font-size: inherit;
                             line-height: inherit;
+                            @include mobile {
+                                width: 310px;
+                            }
                         }
                         input:focus {
                             border: 1px solid white;
