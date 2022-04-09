@@ -6,19 +6,19 @@ export default function Navbar({ selectedPage, setSelectedPage }) {
         <nav className="navbar">
             <ul className="menlist">
                 <li>
-                    <a href="#intro" className={"nav-link" + (selectedPage && "active")}></a>
+                    <a href="#intro" className={"nav-link " + (selectedPage && "active")}>Intro</a>
                 </li>
                 <li>
-                    <a href="#about" className={"nav-link" + (selectedPage && "active")}></a>
+                    <a href="#about" className={"nav-link " + (selectedPage && "active")}>About</a>
                 </li>
                 <li>
-                    <a href="#technologies" className={"nav-link" + (selectedPage && "active")}></a>
+                    <a href="#technologies" className={"nav-link " + (selectedPage && "active")}>Technologies</a>
                 </li>
                 <li>
-                    <a href="#portfolio" className={"nav-link" + (selectedPage && "active")}></a>
+                    <a href="#portfolio" className={"nav-link " + (selectedPage && "active")}>Portfolio</a>
                 </li>
                 <li>
-                    <a href="#contact" className={"nav-link" + (selectedPage && "active")}></a>
+                    <a href="#contact" className={"nav-link " + (selectedPage && "active")}>Contact</a>
                 </li>
             </ul>
         </nav>
