@@ -47,13 +47,15 @@ function App() {
               height={6} /></>
         ) : (
 
-          <><Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /><div className="sections">
-            <Intro />
-            <About />
-            <Technologies />
-            <Portfolio />
-            <Contact />
-          </div></>
+          <><Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
+            <div className="sections">
+              <Intro />
+              <About />
+              <Technologies />
+              <Portfolio />
+              <Contact />
+            </div></>
         )}
     </div >
   );
