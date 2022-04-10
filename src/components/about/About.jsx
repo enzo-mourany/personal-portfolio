@@ -6,19 +6,16 @@ import "./about.scss";
 export default function About() {
 
     const ref = useRef();
-    const inViewport = useIntersection(ref, '0px'); // Trigger as soon as the element becomes visible
+    const inViewport = useIntersection(ref, '0px');
 
     var reveals = document.querySelectorAll('.reveal');
     for (const element of reveals) {
         if (inViewport) {
-            //console.log('in viewport:', ref.current);
             element.classList.add('active');
         } else {
             element.classList.remove('active');
         }
     }
-
-
 
     return (
         <div className="about" id="about">

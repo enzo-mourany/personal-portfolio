@@ -30,14 +30,23 @@
     }
     
     .technologies {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow-x: hidden;
+        padding-bottom: 100px;
+        padding-top: 40px;
         .wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             position: relative;
-            height: 90%;
-            padding-top: 90px;
+            height: 100%;
+            width: 100%;
+            padding-top: 70px;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
             .big-text {
                 position: absolute;
                 white-space: nowrap;
@@ -52,6 +61,7 @@
                 -webkit-text-stroke: 1px $textColorDarkMode;
                 transform: translate(-50%, -50%);
                 @include mobile {
+                    top: 6.5%;
                     font-size: 40px;
                 }
             }
@@ -60,6 +70,7 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                margin-top: 20px;
                 margin-bottom: 40px;
                 h2 {
                     text-align: center;

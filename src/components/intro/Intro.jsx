@@ -4,6 +4,10 @@ export default function Intro() {
 
     return (
         <div className="intro" id="intro">
+            <div className="discover">
+                <p className="explore">EXPLORE</p>
+                <div className="bar"></div>
+            </div>
             <div className="left">
             </div>
             <div className="right">

@@ -35,7 +35,7 @@
     position: relative;
     overflow-x: hidden;
     padding-bottom: 100px;
-    padding-top: 70px;
+    padding-top: 30px;
     .wrapper {
         display: flex;
         justify-content: center;
@@ -76,6 +76,11 @@
             margin: 50px;
             text-align: justify;
             text-justify: inter-word;
+            scrollbar-width: none; // for firefox 
+            &::-webkit-scrollbar {
+                //for chrome
+                display: none;
+            }
             @include mobile {
                 width: 100%;
                 margin: 10px;

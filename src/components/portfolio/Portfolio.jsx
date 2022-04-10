@@ -1,18 +1,32 @@
 import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
-import { useState, useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import { SelectedProjectContext } from "../SelectedProjectContext";
+import useIntersection from '../useIntersection';
 
 export default function Portfolio() {
+
     const setSelectedProject = useContext(SelectedProjectContext);
+
+    const ref = useRef();
+    const inViewport = useIntersection(ref, '0px');
+
+    var reveals = document.querySelectorAll('.reveal');
+    for (const element of reveals) {
+        if (inViewport) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    }
     return (
         <div className="portfolio" id="portfolio">
             <div className="wrapper">
                 <span className="big-text">PORTFOLIO</span>
                 <section className="container">
                     <div className="title">
-                        <h2>My <span>Works</span></h2>
-                        <p>Some of my personal projects and for studies</p>
+                        <h2 className="title">My <span>Works</span></h2>
+                        <p className="text">Some of my personal projects and for studies</p>
                     </div>
                     <ul className="project-grid">
                         {featuredPortfolio.map((item) => (
