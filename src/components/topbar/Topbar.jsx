@@ -21,7 +21,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         </a>
                     </div>
                     <div className="itemContainer">
-                        <Mail className="icon" />
+                        <a href="mailto:enzo.mourany@outlook.com">
+                            <Mail className="icon" />
+                        </a>
                     </div>
                 </div>
                 <motion.div className="right" whileHover={{ scale: 1.1 }}>

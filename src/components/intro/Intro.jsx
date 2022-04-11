@@ -22,7 +22,7 @@ export default function Intro() {
                         </a>
                     </div>
                     <div className="downloadPdf">
-                        <a href="#">Download CV</a>
+                        <a href="../../../public/CV.pdf" download>Download CV</a>
                     </div>
                 </div>
             </div>
