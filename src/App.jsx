@@ -1,15 +1,6 @@
 import './app.scss';
 import React, { useState, useEffect } from 'react';
-import {
-  Animator,
-  ScrollContainer,
-  MoveOut,
-  Fade,
-  batch,
-  ScrollPage,
-  Sticky,
-  Zoom
-} from 'react-scroll-motion';
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -18,6 +9,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Navbar from './components/navbar/Navbar';
+import Project from "./components/project/Project";
 import BarLoader from "react-spinners/BarLoader";
 
 function App() {

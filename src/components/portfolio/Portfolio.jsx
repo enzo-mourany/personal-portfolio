@@ -3,6 +3,7 @@ import { featuredPortfolio } from "../../data";
 import { useState, useContext, useRef } from "react";
 import { SelectedProjectContext } from "../SelectedProjectContext";
 import useIntersection from '../useIntersection';
+import { useNavigate } from "react-router-dom";
 
 export default function Portfolio() {
 
@@ -19,6 +20,10 @@ export default function Portfolio() {
             element.classList.remove('active');
         }
     }
+
+    //let navigate = useNavigate();
+    //navigate('../project/Project.jsx');
+
     return (
         <div className="portfolio" id="portfolio">
             <div className="wrapper">

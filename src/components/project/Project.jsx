@@ -10,6 +10,7 @@ export default function Project() {
     return (
         <div className="project" id="project">
             <p>{featuredPortfolio[selectedProject].title}</p>
+            <p>Hello World</p>
         </div>
     )
 }
