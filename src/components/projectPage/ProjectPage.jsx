@@ -9,8 +9,10 @@ export default function ProjectPage() {
     const selectedProject = useContext(SelectedProjectContext);
     return (
         <div className="project" id="project">
-            <p>{featuredPortfolio[selectedProject].title}</p>
-            <p>Hello World</p>
+            <div className="wrapper">
+                <h2>{featuredPortfolio[selectedProject].title}</h2>
+                <p>Hello World</p>
+            </div>
         </div>
     )
 }

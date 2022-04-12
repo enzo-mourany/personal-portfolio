@@ -46,8 +46,6 @@ function App() {
               height={6} />
           </>
         ) : (
-
-
           <>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

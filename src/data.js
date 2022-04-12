@@ -43,6 +43,15 @@ export const featuredPortfolio = [{
         retex: "link-test",
         githubLink: "https://github.com/enzo-mourany/storyboard.git",
     },
+    {
+        id: 6,
+        title: "Wine Orders",
+        img: "../public/PNG/tabata-app.png",
+        description: "Project for the IUT. Creation and conception of database to manage wine orders. Team project",
+        tech: ["SQL"],
+        retex: "link-test",
+        githubLink: "https://github.com/enzo-mourany/wine-commands.git",
+    },
 ];
 
 export const frontendLanguages = [{
