@@ -1,5 +1,5 @@
 import './app.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,10 +16,12 @@ import Menu from "./components/menu/Menu";
 import Navbar from './components/navbar/Navbar';
 import Project from "./components/project/Project";
 import BarLoader from "react-spinners/BarLoader";
+import { OpenProjectContext } from "./components/OpenedProjectContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState(false);
+  const openedProject = useContext(OpenProjectContext);
 
   const [loading, setLoading] = useState(false);
 
@@ -44,14 +46,21 @@ function App() {
               height={6} /></>
         ) : (
 
+
           <><Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
             <div className="sections">
-              <Intro />
-              <About />
-              <Technologies />
-              <Portfolio />
-              <Contact />
+              {openedProject ? (
+                <Project />
+              ) : (
+                <><Intro />
+                  <About />
+                  <Technologies />
+                  <Portfolio />
+                  <Contact /></>
+              )}
+
+
             </div></>
         )}
     </div >

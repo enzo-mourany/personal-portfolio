@@ -4,6 +4,7 @@ import { useState, useContext, useRef } from "react";
 import { SelectedProjectContext } from "../SelectedProjectContext";
 import useIntersection from '../useIntersection';
 import { useNavigate } from "react-router-dom";
+import { OpenProjectContext } from "../OpenedProjectContext";
 
 export default function Portfolio() {
 
@@ -21,7 +22,7 @@ export default function Portfolio() {
         }
     }
 
-    //const navigate = useNavigate();
+    const openedProject = useContext(OpenProjectContext);
 
 
     return (
