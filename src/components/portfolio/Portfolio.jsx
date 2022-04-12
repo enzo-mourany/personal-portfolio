@@ -21,8 +21,7 @@ export default function Portfolio() {
         }
     }
 
-    //let navigate = useNavigate();
-    //navigate('../project/Project.jsx');
+
 
     return (
         <div className="portfolio" id="portfolio">

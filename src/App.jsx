@@ -1,6 +1,11 @@
 import './app.scss';
 import React, { useState, useEffect } from 'react';
-//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -41,6 +46,12 @@ function App() {
 
           <><Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
+            <Router>
+              <Routes>
+                <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/project' element={<Project />} />
+              </Routes>
+            </Router>
             <div className="sections">
               <Intro />
               <About />
