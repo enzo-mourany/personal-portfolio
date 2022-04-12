@@ -8,13 +8,21 @@ $description: #a8b2d1;
 $decoration: #CB3752;
 $secondaryDecoration: #401A26;
 $width: 768px;
+$titleSize: 34px;
+$titleSizeMobile: 26px;
+$textSize: 22px;
+$textSizeMobile: 16px;
 @mixin mobile {
     @media (max-width: #{$width}) {
         @content
     }
 }
 
-$titleSize: 34px;
-$titleSizeMobile: 26px;
-$textSize: 22px;
-$textSizeMobile: 16px;
+;
+@mixin iphoneSE {
+    @media (max-width: 375) and (max-height: 667) {
+        @content
+    }
+}
+
+;

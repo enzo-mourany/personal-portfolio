@@ -67,6 +67,9 @@
                     top: 6.5%;
                     font-size: 40px;
                 }
+                @include iphoneSE {
+                    font-size: 10px;
+                }
             }
             .title {
                 display: flex;

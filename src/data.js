@@ -11,7 +11,7 @@ export const featuredPortfolio = [{
         id: 2,
         title: "Lowatem AI",
         img: "../public/PNG/tabata-app.png",
-        description: "Project for the IUT. Board game with two opposing players who must eliminate all the soldiers of the opposing player first. Development of an AI that must beat other players and AI",
+        description: "Project for the IUT. Board game with two opposing players and IA development",
         tech: ["Java"],
         retex: "link-test",
         githubLink: "https://github.com/enzo-mourany/ia_lowatem",
