@@ -16,12 +16,12 @@ import Menu from "./components/menu/Menu";
 import Navbar from './components/navbar/Navbar';
 import Project from "./components/project/Project";
 import BarLoader from "react-spinners/BarLoader";
-import { OpenProjectContext } from "./components/OpenedProjectContext";
+import { OpenedProjectContext } from "./components/OpenedProjectContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState(false);
-  const openedProject = useContext(OpenProjectContext);
+  const openedProject = useContext(OpenedProjectContext);
 
   const [loading, setLoading] = useState(false);
 

@@ -4,7 +4,7 @@ import { useState, useContext, useRef } from "react";
 import { SelectedProjectContext } from "../SelectedProjectContext";
 import useIntersection from '../useIntersection';
 import { useNavigate } from "react-router-dom";
-import { OpenProjectContext } from "../OpenedProjectContext";
+import { OpenedProjectContext } from "../OpenedProjectContext";
 
 export default function Portfolio() {
 
@@ -22,7 +22,7 @@ export default function Portfolio() {
         }
     }
 
-    const openedProject = useContext(OpenProjectContext);
+    const setOpenedProject = useContext(OpenedProjectContext);
 
 
     return (
@@ -72,6 +72,7 @@ export default function Portfolio() {
                                                 onClick={() => setSelectedProject(item.id)}>
                                                 {item.title}
                                             </a>
+                                            <p onClick={() => setOpenedProject(true)}></p>
                                         </h3>
                                         <div className="project-description">
                                             <p>{item.description}</p>
