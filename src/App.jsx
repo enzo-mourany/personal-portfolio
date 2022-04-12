@@ -14,7 +14,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Navbar from './components/navbar/Navbar';
-import Project from "./components/project/Project";
+import ProjectPage from "./components/projectPage/ProjectPage";
 import BarLoader from "react-spinners/BarLoader";
 import { OpenedProjectContext } from "./components/OpenedProjectContext";
 
@@ -43,25 +43,35 @@ function App() {
               color={'#43FFD5'}
               loading={loading}
               width={200}
-              height={6} /></>
+              height={6} />
+          </>
         ) : (
 
 
-          <><Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <>
+            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
             <div className="sections">
-              {openedProject ? (
-                <Project />
-              ) : (
-                <><Intro />
-                  <About />
-                  <Technologies />
-                  <Portfolio />
-                  <Contact /></>
-              )}
+
+              {openedProject ?
+                (
+                  <>
+                    <ProjectPage />
+                  </>
+                ) : (
+                  <>
+                    <Intro />
+                    <About />
+                    <Technologies />
+                    <Portfolio />
+                    <Contact />
+                  </>
+                )}
 
 
-            </div></>
+            </div>
+          </>
         )}
     </div >
   );

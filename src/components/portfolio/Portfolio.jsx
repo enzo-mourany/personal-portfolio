@@ -9,6 +9,7 @@ import { OpenedProjectContext } from "../OpenedProjectContext";
 export default function Portfolio() {
 
     const setSelectedProject = useContext(SelectedProjectContext);
+    const setOpenedProject = useContext(OpenedProjectContext);
 
     const ref = useRef();
     const inViewport = useIntersection(ref, '0px');
@@ -22,7 +23,6 @@ export default function Portfolio() {
         }
     }
 
-    const setOpenedProject = useContext(OpenedProjectContext);
 
 
     return (
