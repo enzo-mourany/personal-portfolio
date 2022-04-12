@@ -46,12 +46,6 @@ function App() {
 
           <><Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /><Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
-            <Router>
-              <Routes>
-                <Route path='/portfolio' element={<Portfolio />} />
-                <Route path='/project' element={<Project />} />
-              </Routes>
-            </Router>
             <div className="sections">
               <Intro />
               <About />
