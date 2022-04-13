@@ -127,6 +127,9 @@
                     @include mobile {
                         width: 400px;
                     }
+                    @include iphoneSE {
+                        width: 300px;
+                    }
                     .project-inner {
                         display: flex;
                         justify-content: space-between;

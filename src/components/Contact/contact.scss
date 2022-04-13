@@ -107,6 +107,9 @@
                 @include mobile {
                     width: 400px;
                 }
+                @include iphoneSE {
+                    width: 300px;
+                }
                 .form-group {
                     padding: 0 20px 30px;
                     //background: rgba(32, 33, 36, .5);
@@ -136,6 +139,10 @@
                             @include mobile {
                                 width: 310px;
                             }
+                            @include iphoneSE {
+                                width: 216px;
+                                font-size: 12px;
+                            }
                         }
                         input:focus {
                             border: 1px solid white;
@@ -153,6 +160,10 @@
                             border-radius: 3px;
                             @include mobile {
                                 width: 310px;
+                            }
+                            @include iphoneSE {
+                                width: 216px;
+                                font-size: 12px;
                             }
                         }
                         textarea:focus {
@@ -173,6 +184,9 @@
                             letter-spacing: 2px;
                             @include mobile {
                                 width: 310px;
+                            }
+                            @include iphoneSE {
+                                width: 216px;
                             }
                         }
                     }

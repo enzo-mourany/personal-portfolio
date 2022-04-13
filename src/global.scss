@@ -20,7 +20,7 @@ $textSizeMobile: 16px;
 
 ;
 @mixin iphoneSE {
-    @media (max-width: 375) and (max-height: 667) {
+    @media (max-width: 375px) and (max-height: 667px) {
         @content
     }
 }
