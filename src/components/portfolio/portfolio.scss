@@ -63,7 +63,11 @@
                 font-size: 40px;
             }
             @include laptop1024 {
-                font-size: 100px;
+                font-size: $titleSizeLaptop1024;
+            }
+            @include mobileL {
+                font-size: $titleSizeLaptop1024;
+                top: 4%;
             }
         }
         .container {
@@ -135,6 +139,10 @@
                     }
                     @include iphoneSE {
                         width: 300px;
+                    }
+                    @include mobileL {
+                        width: 340px;
+                        height: 300px;
                     }
                     .project-inner {
                         display: flex;

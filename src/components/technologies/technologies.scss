@@ -74,6 +74,10 @@
                     font-size: 100px;
                     top: 13%;
                 }
+                @include mobileL {
+                    font-size: 30px;
+                    top: 7%;
+                }
             }
             .title {
                 display: flex;
@@ -107,6 +111,10 @@
                 }
                 @include laptop1024 {
                     width: 90%;
+                }
+                @include mobileL {
+                    flex-direction: column;
+                    align-items: center;
                 }
                 .container {
                     display: flex;

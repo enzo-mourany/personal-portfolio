@@ -26,6 +26,15 @@ $textSizeMobile: 16px;
 }
 
 ;
+$titleSizeLaptop1024: 100px;
+@mixin mobileL {
+    @media (max-width: 425px) {
+        @content
+    }
+}
+
+;
+$titleSizeLaptop1024: 50px;
 // iPhone SE
 @mixin iphoneSE {
     @media (max-width: 375px) and (max-height: 667px) {

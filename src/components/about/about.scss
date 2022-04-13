@@ -53,6 +53,9 @@
         @include laptop1024 {
             width: 100%;
         }
+        @include mobileL {
+            width: 90%;
+        }
         .big-text {
             position: absolute;
             white-space: nowrap;
@@ -71,6 +74,9 @@
             }
             @include laptop1024 {
                 font-size: 100px;
+            }
+            @include mobileL {
+                font-size: $titleSizeLaptop1024;
             }
         }
         .container {
