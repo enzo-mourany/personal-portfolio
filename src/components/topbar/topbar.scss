@@ -39,8 +39,9 @@
     height: 70px;
     top: 0;
     z-index: 3;
-    background-color: $mainColor;
-    color: $highlightColor;
+    backdrop-filter: blur(5px);
+    //background-color: $mainColor;
+    //color: $highlightColor;
     transition: all 1s ease;
     .wrapper {
         display: flex;
