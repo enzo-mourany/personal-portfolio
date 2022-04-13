@@ -116,7 +116,8 @@
         }
     }
     &.active {
-        background-color: $secondaryColor;
+        backdrop-filter: blur(20px);
+        //background-color: $secondaryColor;
         color: white;
         .hamburger {
             span {

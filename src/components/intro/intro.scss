@@ -43,6 +43,72 @@
         width: 100%;
         align-items: center;
     }
+    .icons {
+        position: absolute;
+        left: 70px;
+        bottom: 0px;
+        .itemContainer {
+            padding: 5px;
+            margin-bottom: 15px;
+            transition: all 0.2s ease;
+            a {
+                svg {
+                    opacity: 60%;
+                }
+            }
+        }
+        .itemContainer:hover {
+            transform: translateY(-3px);
+            a {
+                svg {
+                    opacity: 100%;
+                    stroke: $highlightColor;
+                }
+            }
+        }
+    }
+    .icons::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: #fff;
+        opacity: 60%;
+    }
+    .explore {
+        position: absolute;
+        right: 70px;
+        bottom: 0px;
+        width: 40px;
+        z-index: 10;
+        .text {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            position: relative;
+            p {
+                font-family: SFMonoRegular;
+                margin: 20px auto;
+                padding: 10px;
+                letter-spacing: 0.5em;
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: vertical-rl;
+                font-size: 12px;
+                opacity: 60%;
+            }
+        }
+    }
+    .explore::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: #fff;
+        opacity: 60%;
+    }
     .left {
         background-color: #fff;
     }
