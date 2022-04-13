@@ -1,12 +1,14 @@
 import "./topbar.scss";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { motion } from "framer-motion";
 import { LinkedIn, Mail, GitHub } from "@material-ui/icons";
+import { ShowTopbarContext } from "../ShowTopbarContext";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     const [email, setEmail] = useState(false);
+    const showTopbar = useContext(ShowTopbarContext);
     return (
-        <div className={"topbar " + (menuOpen && "active")}>
+        <div className={"topbar " + (menuOpen && "active") + " " + (showTopbar && "showed")}>
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Enzo</a>

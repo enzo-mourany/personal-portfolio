@@ -17,6 +17,7 @@ import Navbar from './components/navbar/Navbar';
 import ProjectPage from "./components/projectPage/ProjectPage";
 import BarLoader from "react-spinners/BarLoader";
 import { OpenedProjectContext } from "./components/OpenedProjectContext";
+import { ShowTopbarContext } from "./components/ShowTopbarContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,6 +32,24 @@ function App() {
       setLoading(false)
     }, 2000)
   }, [])
+
+  // Hide topbar when scrolling down
+  const setShowTopbar = useContext(ShowTopbarContext);
+  const controlNavbar = () => {
+    if (window.screenY > 100) {
+      setShowTopbar(false);
+    } else {
+      setShowTopbar(true);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  }, [])
+
 
   return (
 

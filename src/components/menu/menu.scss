@@ -14,7 +14,8 @@
     height: 100vh;
     top: -100vh;
     z-index: 2;
-    background-color: $secondaryColor;
+    //background-color: $secondaryColor;
+    backdrop-filter: blur(20px);
     transition: all 0.6s ease;
     -webkit-font-smoothing: antialiased;
     @include mobile {

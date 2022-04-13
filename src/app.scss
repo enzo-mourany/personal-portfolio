@@ -20,6 +20,14 @@
     }
 }
 
+.topbar {
+    position: fixed;
+}
+
+.topbar_hidden {
+    background-color: #fff;
+}
+
 .sections {
     width: 100%;
     height: 100vh;
