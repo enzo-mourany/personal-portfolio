@@ -21,7 +21,7 @@ import { OpenedProjectContext } from "./components/OpenedProjectContext";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState(false);
-  const openedProject = useContext(OpenedProjectContext);
+  //const openedProject = useContext(OpenedProjectContext);
 
   const [loading, setLoading] = useState(false);
 
@@ -51,21 +51,11 @@ function App() {
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
             <div className="sections">
-
-              {openedProject ?
-                (
-                  <>
-                    <ProjectPage />
-                  </>
-                ) : (
-                  <>
-                    <Intro />
-                    <About />
-                    <Technologies />
-                    <Portfolio />
-                    <Contact />
-                  </>
-                )}
+              <Intro />
+              <About />
+              <Technologies />
+              <Portfolio />
+              <Contact />
 
 
             </div>

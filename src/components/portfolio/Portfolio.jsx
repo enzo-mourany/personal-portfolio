@@ -5,11 +5,12 @@ import { SelectedProjectContext } from "../SelectedProjectContext";
 import useIntersection from '../useIntersection';
 import { useNavigate } from "react-router-dom";
 import { OpenedProjectContext } from "../OpenedProjectContext";
+import { motion } from "framer-motion";
 
 export default function Portfolio() {
 
     const setSelectedProject = useContext(SelectedProjectContext);
-    const setOpenedProject = useContext(OpenedProjectContext);
+    //const setOpenedProject = useContext(OpenedProjectContext);
 
     const ref = useRef();
     const inViewport = useIntersection(ref, '0px');
@@ -22,7 +23,6 @@ export default function Portfolio() {
             element.classList.remove('active');
         }
     }
-
 
 
     return (
@@ -72,7 +72,6 @@ export default function Portfolio() {
                                                 onClick={() => setSelectedProject(item.id)}>
                                                 {item.title}
                                             </a>
-                                            <p onClick={() => setOpenedProject(true)}></p>
                                         </h3>
                                         <div className="project-description">
                                             <p>{item.description}</p>

@@ -105,9 +105,9 @@
                 box-sizing: inherit;
                 position: relative;
                 list-style: none;
-                width: 900px;
+                width: 1200px;
                 height: 100%;
-                padding: 10px;
+                padding: 20px;
                 margin: 50px 0px 0px;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 grid-gap: 15px;
@@ -123,6 +123,7 @@
                     text-align: -webkit-match-parent;
                     height: 340px;
                     transition: all 0.25s ease-in-out 0s;
+                    box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.3);
                     @include mobile {
                         width: 400px;
                     }
