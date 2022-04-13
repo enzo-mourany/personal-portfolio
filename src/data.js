@@ -4,8 +4,9 @@ export const featuredPortfolio = [{
         img: "../public/PNG/tabata-app.png",
         description: "A simple Tabata application compatible on IOS and Android. My React Native project",
         tech: ["React Native"],
-        retex: "link-test",
+        retex: "../public/PDF/retex-the-tabata-app.pdf",
         githubLink: "www.google.com",
+        date: "2022"
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ export const featuredPortfolio = [{
         tech: ["Java"],
         retex: "link-test",
         githubLink: "https://github.com/enzo-mourany/ia_lowatem",
+        date: "2022"
     },
     {
         id: 3,
@@ -24,6 +26,7 @@ export const featuredPortfolio = [{
         tech: ["Java", "Processing"],
         retex: "link-test",
         githubLink: "https://github.com/enzo-mourany/pong-java-iut",
+        date: "2021"
     },
     {
         id: 4,
@@ -33,6 +36,7 @@ export const featuredPortfolio = [{
         tech: ["HTML", "CSS"],
         retex: "link-test",
         githubLink: "github-link test",
+        date: "2021"
     },
     {
         id: 5,
@@ -42,6 +46,7 @@ export const featuredPortfolio = [{
         tech: ["Shell", "HTML"],
         retex: "link-test",
         githubLink: "https://github.com/enzo-mourany/storyboard.git",
+        date: "2021"
     },
     {
         id: 6,
@@ -51,6 +56,7 @@ export const featuredPortfolio = [{
         tech: ["SQL"],
         retex: "link-test",
         githubLink: "https://github.com/enzo-mourany/wine-commands.git",
+        date: "2022"
     },
 ];
 

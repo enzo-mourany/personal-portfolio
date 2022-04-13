@@ -57,7 +57,7 @@ export default function Portfolio() {
                                                         </path>
                                                     </svg>
                                                 </a>
-                                                <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                                                <a href={item.retex} download rel="noopener noreferrer">
                                                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
                                                         <title>External Link</title>
                                                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
