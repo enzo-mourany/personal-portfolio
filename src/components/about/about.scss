@@ -50,6 +50,9 @@
         @include mobile {
             width: 90%;
         }
+        @include laptop1024 {
+            width: 100%;
+        }
         .big-text {
             position: absolute;
             white-space: nowrap;
@@ -65,6 +68,9 @@
             -webkit-text-stroke: 1px $textColorDarkMode;
             @include mobile {
                 font-size: 40px;
+            }
+            @include laptop1024 {
+                font-size: 100px;
             }
         }
         .container {

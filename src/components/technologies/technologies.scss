@@ -70,6 +70,10 @@
                 @include iphoneSE {
                     font-size: 26px;
                 }
+                @include laptop1024 {
+                    font-size: 100px;
+                    top: 13%;
+                }
             }
             .title {
                 display: flex;
@@ -97,8 +101,12 @@
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
+                padding: 20px;
                 @include mobile {
                     flex-direction: column;
+                }
+                @include laptop1024 {
+                    width: 90%;
                 }
                 .container {
                     display: flex;
@@ -112,6 +120,9 @@
                     box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.3);
                     transition: all 0.3s ease;
                     -webkit-font-smoothing: antialiased;
+                    @include laptop1024 {
+                        margin: 16px;
+                    }
                     h2 {
                         padding: 30px;
                         font-weight: 600;

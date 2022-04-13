@@ -56,11 +56,14 @@
             color: transparent;
             opacity: 30%;
             -webkit-text-stroke: 1px $textColorDarkMode;
-            top: 5%;
+            top: 6%;
             left: 50%;
             transform: translate(-50%, -50%);
             @include mobile {
                 font-size: 40px;
+            }
+            @include laptop1024 {
+                font-size: 100px;
             }
         }
         .container {
@@ -117,6 +120,9 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                }
+                @include laptop1024 {
+                    width: 900px;
                 }
                 .item {
                     display: flex;

@@ -68,7 +68,7 @@ export default function Portfolio() {
                                             </div>
                                         </div>
                                         <h3 className="project-title">
-                                            <a href="../projects-pages/Project.jsx"
+                                            <a href="#"
                                                 onClick={() => setSelectedProject(item.id)}>
                                                 {item.title}
                                             </a>

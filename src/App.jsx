@@ -6,6 +6,8 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+
+// Pages Imports
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -14,8 +16,10 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Navbar from './components/navbar/Navbar';
-import ProjectPage from "./components/projectPage/ProjectPage";
+import ProjectPage from './components/projectPage/ProjectPage';
 import BarLoader from "react-spinners/BarLoader";
+
+
 import { OpenedProjectContext } from "./components/OpenedProjectContext";
 import { ShowTopbarContext } from "./components/ShowTopbarContext";
 
@@ -75,8 +79,7 @@ function App() {
               <Technologies />
               <Portfolio />
               <Contact />
-
-
+              <ProjectPage />
             </div>
           </>
         )}

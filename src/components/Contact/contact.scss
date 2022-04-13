@@ -47,6 +47,9 @@
         @include mobile {
             width: 100%;
         }
+        @include laptop1024 {
+            width: 100%;
+        }
         .big-text {
             position: absolute;
             top: 9%;
