@@ -1,11 +1,11 @@
 import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
 import { useState, useContext, useRef } from "react";
-import { SelectedProjectContext } from "../SelectedProjectContext";
 import useIntersection from '../useIntersection';
 import { useNavigate } from "react-router-dom";
-import { OpenedProjectContext } from "../OpenedProjectContext";
 import { motion } from "framer-motion";
+import { OpenedProjectContext } from "../../context/OpenedProjectContext";
+import { SelectedProjectContext } from "../../context/SelectedProjectContext";
 
 export default function Portfolio() {
 

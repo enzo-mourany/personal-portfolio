@@ -20,8 +20,8 @@ import ProjectPage from './components/projectPage/ProjectPage';
 import BarLoader from "react-spinners/BarLoader";
 
 
-import { OpenedProjectContext } from "./components/OpenedProjectContext";
-import { ShowTopbarContext } from "./components/ShowTopbarContext";
+import { OpenedProjectContext } from "./context/OpenedProjectContext";
+import { ShowTopbarContext } from "./context/ShowTopbarContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

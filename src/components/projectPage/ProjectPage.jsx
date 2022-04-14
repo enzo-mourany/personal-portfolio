@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import "./projectPage.scss";
 import "../portfolio/Portfolio";
 import { featuredPortfolio } from "../../data";
-import { SelectedProjectContext } from "../SelectedProjectContext";
+import { SelectedProjectContext } from "../../context/SelectedProjectContext";
 
 
 export default function ProjectPage() {

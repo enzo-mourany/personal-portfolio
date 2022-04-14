@@ -2,7 +2,7 @@ import "./topbar.scss";
 import { useState, useContext } from 'react';
 import { motion } from "framer-motion";
 import { LinkedIn, Mail, GitHub } from "@material-ui/icons";
-import { ShowTopbarContext } from "../ShowTopbarContext";
+import { ShowTopbarContext } from "../../context/ShowTopbarContext";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     const [email, setEmail] = useState(false);
