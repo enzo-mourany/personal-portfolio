@@ -1,0 +1,153 @@
+@import "../../global.scss";
+@font-face {
+    font-family: "CalibreMedium";
+    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreSemiBold";
+    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoSemiBold";
+    src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width: 65%;
+        padding-top: 70px;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+        @include mobile {
+            width: 90%;
+        }
+        @include laptop1024 {
+            width: 100%;
+        }
+        @include mobileL {
+            width: 90%;
+        }
+        .big-text {
+            position: absolute;
+            white-space: nowrap;
+            top: 15%;
+            left: 50%;
+            font-size: 150px;
+            font-weight: 800;
+            font-family: poppins;
+            letter-spacing: 10px;
+            color: transparent;
+            opacity: 30%;
+            transform: translate(-50%, -50%);
+            -webkit-text-stroke: 1px $textColorDarkMode;
+            @include mobile {
+                font-size: 40px;
+            }
+            @include laptop1024 {
+                font-size: 100px;
+            }
+            @include mobileL {
+                font-size: $titleSizeLaptop1024;
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 70%;
+            margin: 50px;
+            text-align: justify;
+            text-justify: inter-word;
+            scrollbar-width: none; // for firefox 
+            &::-webkit-scrollbar {
+                //for chrome
+                display: none;
+            }
+            @include mobile {
+                width: 100%;
+                margin: 10px;
+            }
+            h2 {
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: CalibreLight;
+                font-size: $titleSize;
+                font-weight: 500;
+                letter-spacing: 1px;
+                color: $textColorDarkMode;
+                transition: all 1.2s ease;
+                transition-delay: 100ms;
+                span {
+                    font-weight: 600;
+                }
+                @include mobile {
+                    font-size: 22px;
+                }
+            }
+            h2::after {
+                display: block;
+                position: relative;
+                content: "";
+                margin-top: 16px;
+                top: -5px;
+                width: 300px;
+                height: 1px;
+                background: #fff;
+                opacity: 60%;
+            }
+            p {
+                text-align: center;
+                font-size: $textSize;
+                line-height: 1.3em;
+                font-family: CalibreLight;
+                letter-spacing: 0.5px;
+                color: $textColorDarkMode;
+                opacity: 70%;
+                transition: all 1.2s ease;
+                transition-delay: 300ms;
+                @include mobile {
+                    font-size: $textSizeMobile;
+                }
+            }
+            .reveal {
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+            }
+            .reveal.active {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,213 @@
+@import "../../global.scss";
+@font-face {
+    font-family: "CalibreMedium";
+    src: url("../../fonts/Calibre/Calibre-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreLight";
+    src: url("../../fonts/Calibre/Calibre-Light.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibreSemiBold";
+    src: url("../../fonts/Calibre/Calibre-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoRegular";
+    src: url("../../fonts/SFMono/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFMonoSemiBold";
+    src: url("../../fonts/SFMono/SFMono-Semibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width: 65%;
+        padding-top: 70px;
+        @include mobile {
+            width: 100%;
+        }
+        @include laptop1024 {
+            width: 100%;
+        }
+        .big-text {
+            position: absolute;
+            top: 9%;
+            left: 50%;
+            font-size: 150px;
+            font-weight: 800;
+            font-family: poppins;
+            white-space: nowrap;
+            letter-spacing: 10px;
+            color: transparent;
+            opacity: 30%;
+            transform: translate(-50%, -50%);
+            -webkit-text-stroke: 1px $textColorDarkMode;
+            @include mobile {
+                font-size: 40px;
+            }
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 50px;
+            text-align: justify;
+            text-justify: inter-word;
+            .text {
+                margin-bottom: 60px;
+                h2 {
+                    margin-bottom: 7px;
+                    text-align: center;
+                    font-family: CalibreLight;
+                    font-size: $titleSize;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    color: $textColorDarkMode;
+                    span {
+                        font-weight: 600;
+                    }
+                    @include mobile {
+                        font-size: 22px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .formWord {
+                display: flex;
+                flex-direction: row;
+                margin: 20px;
+                flex-shrink: 0;
+                width: 100%;
+                max-width: 100%;
+                @include mobile {
+                    width: 400px;
+                }
+                @include iphoneSE {
+                    width: 300px;
+                }
+                @include mobileL {
+                    width: 350px;
+                }
+                .form-group {
+                    padding: 0 20px 30px;
+                    //background: rgba(32, 33, 36, .5);
+                    background-color: $secondaryColor;
+                    border-radius: 5px;
+                    border: 1px solid rgba(255, 255, 255, .1);
+                    .item {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 10px;
+                        width: 100%;
+                        padding-top: 3rem!important;
+                        span {
+                            display: inline-block;
+                            margin-bottom: 15px;
+                        }
+                        input {
+                            padding: 10px;
+                            width: 600px;
+                            border: 1px solid rgba(255, 255, 255, .3);
+                            border-radius: 3px;
+                            color: white;
+                            background-color: rgba(32, 33, 36, .1);
+                            margin-top: 1rem!important;
+                            font-size: inherit;
+                            line-height: inherit;
+                            @include mobile {
+                                width: 310px;
+                            }
+                            @include iphoneSE {
+                                width: 216px;
+                                font-size: 12px;
+                            }
+                            @include mobileL {
+                                width: 260px;
+                                font-size: 12px;
+                            }
+                        }
+                        input:focus {
+                            border: 1px solid white;
+                            box-shadow: 0 0 3px white;
+                            outline-offset: 0px;
+                            outline: none;
+                        }
+                        textarea {
+                            height: 200px;
+                            padding: 10px;
+                            width: 600px;
+                            color: white;
+                            background-color: rgba(32, 33, 36, .1);
+                            border: 1px solid rgba(255, 255, 255, .3);
+                            border-radius: 3px;
+                            @include mobile {
+                                width: 310px;
+                            }
+                            @include iphoneSE {
+                                width: 216px;
+                                font-size: 12px;
+                            }
+                            @include mobileL {
+                                width: 260px;
+                            }
+                        }
+                        textarea:focus {
+                            border: 1px solid white;
+                            box-shadow: 0 0 3px white;
+                            outline-offset: 0px;
+                            outline: none;
+                        }
+                        button {
+                            background-color: transparent;
+                            width: 600px;
+                            border: 1px solid rgba(255, 255, 255, .3);
+                            padding: 10px;
+                            font-size: 15px;
+                            font-weight: 600;
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            @include mobile {
+                                width: 310px;
+                            }
+                            @include iphoneSE {
+                                width: 216px;
+                            }
+                            @include mobileL {
+                                width: 260px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

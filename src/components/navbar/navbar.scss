@@ -1,0 +1,68 @@
+@import "../../global.scss";
+.navbar {
+    position: fixed;
+    right: 30px;
+    bottom: 30%;
+    z-index: 9;
+    .menlist {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        cursor: default;
+        li {
+            position: relative;
+            display: block;
+            margin: 25px 16px;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            a {
+                top: 0;
+                left: 0;
+                padding: unset!important;
+                width: 100%;
+                height: 100%;
+                outline: none;
+                border-radius: 100%;
+                border: 1px solid white;
+                background-color: transparent;
+                text-indent: -999em;
+                cursor: pointer;
+                position: relative;
+                .nav-link {
+                    display: block;
+                    text-decoration: none;
+                }
+            }
+            .nav-link {
+                display: block;
+                padding: 0.5rem 1rem;
+                color: #0d6efd;
+                text-decoration: none;
+            }
+            a:before {
+                width: 30px;
+                content: '';
+                position: absolute;
+                height: 30px;
+                border-radius: 100%;
+                top: -13px;
+                left: -13px;
+                opacity: 0;
+                background: white;
+            }
+            a:hover::before {
+                border: 4px solid red;
+            }
+            a.active {
+                border: 3px solid white;
+                background-color: white;
+            }
+            a.active:before {
+                opacity: 1;
+            }
+        }
+    }
+}

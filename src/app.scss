@@ -1,0 +1,48 @@
+@import "./global.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    height: 100vh;
+    background: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //text-align: center;
+    width: 100%;
+    height: 100vh;
+    &::-webkit-scrollbar {
+        //for chrome
+        display: none;
+    }
+}
+
+.topbar {
+    position: fixed;
+}
+
+.topbar_hidden {
+    background-color: #fff;
+}
+
+.sections {
+    width: 100%;
+    height: 100vh;
+    //position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; // for firefox 
+    &::-webkit-scrollbar {
+        //for chrome
+        display: none;
+    }
+    >* {
+        width: 100vw;
+        //height: calc(100vh - 70px);
+        //scroll-snap-align: start;
+    }
+}
