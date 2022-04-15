@@ -1,7 +1,6 @@
 import './app.scss';
 import React, { useState, useEffect, useContext } from 'react';
 
-
 // Pages Imports
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
@@ -10,19 +9,14 @@ import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-//import Navbar from './components/navbar/Navbar';
 import ProjectPage from './components/projectPage/ProjectPage';
 import BarLoader from "react-spinners/BarLoader";
 
-
-//import { OpenedProjectContext } from "./context/OpenedProjectContext";
+// Context Imports
 import { ShowTopbarContext } from "./context/ShowTopbarContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  //const [selectedPage, setSelectedPage] = useState(false);
-  //const openedProject = useContext(OpenedProjectContext);
-
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -67,7 +61,6 @@ function App() {
           <>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            {/* <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
             <div className="sections">
               <Intro />
               <About />
@@ -83,6 +76,3 @@ function App() {
 }
 
 export default App;
-
-
-// TODO: Add little bar right side = pages progression

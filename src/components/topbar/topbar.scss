@@ -40,8 +40,6 @@
     top: 0;
     z-index: 3;
     backdrop-filter: blur(5px);
-    //background-color: $mainColor;
-    //color: $highlightColor;
     transition: all 1s ease;
     .wrapper {
         display: flex;
@@ -121,8 +119,8 @@
         }
     }
     &.active {
-        backdrop-filter: blur(20px);
-        //background-color: $secondaryColor;
+        //backdrop-filter: blur(20px);
+        background-color: $secondaryColor;
         color: white;
         .hamburger {
             span {
