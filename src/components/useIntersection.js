@@ -11,7 +11,7 @@ const useIntersection = (element, rootMargin) => {
             }, { rootMargin }
         );
 
-        element.current && observer.observe(e);
+        e && observer.observe(e);
 
         return () => observer.unobserve(e);
     });
