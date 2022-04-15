@@ -1,11 +1,6 @@
 import './app.scss';
 import React, { useState, useEffect, useContext } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Redirect,
-} from "react-router-dom";
+
 
 // Pages Imports
 import Topbar from "./components/topbar/Topbar";

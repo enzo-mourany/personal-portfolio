@@ -1,6 +1,5 @@
 import "./topbar.scss";
 import { useState, useContext } from 'react';
-import { motion } from "framer-motion";
 import { LinkedIn, Mail, GitHub } from "@material-ui/icons";
 import { ShowTopbarContext } from "../../context/ShowTopbarContext";
 
@@ -28,7 +27,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         </a>
                     </div>
                 </div>
-                <motion.div className="right" whileHover={{ scale: 1.1 }}>
+                <div className="right">
                     <div
                         className="hamburger"
                         onClick={() => setMenuOpen(!menuOpen)}
@@ -38,7 +37,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <span className="line2"></span>
                         <span className="line3"></span>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div>
     );
