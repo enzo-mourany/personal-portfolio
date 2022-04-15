@@ -27,8 +27,8 @@ export default function Technologies() {
                                             customLabel=" "
                                             bgColor="#43FFD5"
                                             baseBgColor="#0B1829"
-                                            height={10}
-                                            width={100}
+                                            height="10px"
+                                            width="100px"
                                         />
                                     </div>
                                 </li>
