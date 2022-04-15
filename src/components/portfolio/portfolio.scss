@@ -128,6 +128,9 @@
                 @include laptop1024 {
                     width: 900px;
                 }
+                @include laptop1300 {
+                    width: 800px;
+                }
                 .item {
                     display: flex;
                     text-align: -webkit-match-parent;
@@ -143,6 +146,10 @@
                     @include mobileL {
                         width: 340px;
                         height: 300px;
+                    }
+                    @include mobileS {
+                        width: 280px;
+                        height: 340px;
                     }
                     .project-inner {
                         display: flex;

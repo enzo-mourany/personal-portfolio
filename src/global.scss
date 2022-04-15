@@ -34,6 +34,20 @@ $titleSizeLaptop1024: 100px;
 }
 
 ;
+@mixin mobileS {
+    @media (max-width: 320px) {
+        @content
+    }
+}
+
+;
+@mixin laptop1300 {
+    @media (max-width: 1300px) {
+        @content
+    }
+}
+
+;
 $titleSizeLaptop1024: 50px;
 // iPhone SE
 @mixin iphoneSE {

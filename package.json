@@ -1,7 +1,6 @@
 {
     "name": "personal-portfolio",
     "version": "0.1.0",
-    "homepage": "https://enzo-mourany.github.io/",
     "private": true,
     "dependencies": {
         "@material-ui/core": "^4.12.3",
@@ -17,14 +16,11 @@
         "react-button": "^1.2.1",
         "react-dom": "^17.0.2",
         "react-scripts": "^5.0.0",
-        "react-scroll-motion": "^0.2.6",
         "react-spinners": "^0.11.0",
         "react-svg": "^14.1.14",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -47,8 +43,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "gh-pages": "^3.2.3"
     }
 }
