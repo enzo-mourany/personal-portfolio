@@ -10,17 +10,17 @@ import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-import Navbar from './components/navbar/Navbar';
+//import Navbar from './components/navbar/Navbar';
 import ProjectPage from './components/projectPage/ProjectPage';
 import BarLoader from "react-spinners/BarLoader";
 
 
-import { OpenedProjectContext } from "./context/OpenedProjectContext";
+//import { OpenedProjectContext } from "./context/OpenedProjectContext";
 import { ShowTopbarContext } from "./context/ShowTopbarContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedPage, setSelectedPage] = useState(false);
+  //const [selectedPage, setSelectedPage] = useState(false);
   //const openedProject = useContext(OpenedProjectContext);
 
   const [loading, setLoading] = useState(false);
@@ -47,7 +47,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', controlNavbar)
     }
-  }, [])
+  })
 
 
   return (

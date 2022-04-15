@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.scss';
 
-export default function Navbar({ selectedPage, setSelectedPage }) {
+export default function Navbar({ selectedPage }) {
     return (
         <nav className="navbar">
             <ul className="menlist">

@@ -1,8 +1,8 @@
 import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
-import { useState, useContext, useRef } from "react";
+import { useContext, useRef } from "react";
 import useIntersection from '../useIntersection';
-import { OpenedProjectContext } from "../../context/OpenedProjectContext";
+//import { OpenedProjectContext } from "../../context/OpenedProjectContext";
 import { SelectedProjectContext } from "../../context/SelectedProjectContext";
 
 export default function Portfolio() {
@@ -66,8 +66,7 @@ export default function Portfolio() {
                                             </div>
                                         </div>
                                         <h3 className="project-title">
-                                            <a href="#"
-                                                onClick={() => setSelectedProject(item.id)}>
+                                            <a href="#ProjectPage" onClick={() => setSelectedProject(item.id)}>
                                                 {item.title}
                                             </a>
                                         </h3>

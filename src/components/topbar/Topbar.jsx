@@ -1,10 +1,10 @@
 import "./topbar.scss";
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { LinkedIn, Mail, GitHub } from "@material-ui/icons";
 import { ShowTopbarContext } from "../../context/ShowTopbarContext";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
-    const [email, setEmail] = useState(false);
+    //const [email, setEmail] = useState(false);
     const showTopbar = useContext(ShowTopbarContext);
     return (
         <div className={"topbar " + (menuOpen && "active") + " " + (showTopbar && "showed")}>
