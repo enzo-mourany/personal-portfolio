@@ -135,14 +135,11 @@
             }
             h1 {
                 font-size: 90px;
-                font-family: poppins, sans-serif;
+                font-family: CalibreSemiBold;
                 font-size: 80px;
                 font-weight: 200;
                 letter-spacing: 1px;
                 color: $textColorDarkMode;
-                span {
-                    font-weight: 700;
-                }
                 @include mobile {
                     font-size: 40px;
                 }
@@ -161,10 +158,11 @@
                 }
             }
             h3 {
-                font-size: 30px;
-                font-family: poppins, sans-serif;
+                font-size: 35px;
+                font-family: CalibreSemiBold;
                 font-weight: 400;
-                color: $highlightColor;
+                opacity: 70%;
+                color: $textColorDarkMode;
                 @include mobile {
                     font-size: 20px;
                 }
@@ -193,8 +191,7 @@
                     margin-left: 40px;
                 }
                 .learnMoreBtn {
-                    padding: 12px 15px;
-                    margin: 8px;
+                    padding: 19px 15px;
                     text-decoration: none;
                     color: $highlightColor;
                     font-size: 1.05rem;
@@ -219,8 +216,7 @@
                     margin-left: 40px;
                 }
                 a {
-                    padding: 12px 15px;
-                    margin: 8px;
+                    padding: 19px 15px;
                     text-decoration: none;
                     color: $highlightColor;
                     font-size: 1.05rem;
