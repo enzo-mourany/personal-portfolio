@@ -1,10 +1,41 @@
 import "./intro.scss";
-import { Fade } from 'react-reveal';
+import Reveal, { Fade } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
+const textsAnimations = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
+const buttonsAnimations = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  25% {
+      opacity: 0.3;
+  }
+  40% {
+      opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
 
 export default function Intro() {
     return (
         <div className="intro" id="intro">
-            <Fade delay={3000}>
+            <Fade delay={2400} triggerOnce={true}>
 
                 <div className="icons">
                     <div className="itemContainer">
@@ -28,7 +59,7 @@ export default function Intro() {
                     </div>
                 </div>
             </Fade>
-            <Fade delay={3000}>
+            <Fade delay={2400} triggerOnce={true}>
 
                 <div className="explore">
                     <div className="text">
@@ -41,31 +72,33 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-
-                    <Fade bottom distance="20px" delay={1200}>
+                    <Reveal keyframes={textsAnimations} delay={1200} duration={500} triggerOnce={true}>
                         <h2>Hi There, I'm</h2>
-                    </Fade>
-                    <Fade bottom distance="20px" delay={1400}>
+
+                    </Reveal>
+                    <Reveal keyframes={textsAnimations} delay={1350} duration={500} triggerOnce={true}>
                         <h1>Enzo Mourany</h1>
-                    </Fade>
-                    <Fade bottom distance="20px" delay={1600}>
+                    </Reveal>
+                    <Reveal keyframes={textsAnimations} delay={1500} duration={500} triggerOnce={true}>
                         <h3>French Frontend Developer</h3>
-                    </Fade>
+                    </Reveal>
 
                 </div>
-                <Fade bottom cascade distance="10px" delay={2000}>
 
-                    <div className="buttons">
+                <div className="buttons">
+                    <Reveal keyframes={buttonsAnimations} delay={1650} duration={300} triggerOnce={true}>
                         <div className="learnMore">
                             <a className="learnMoreBtn" href="#about">
                                 Learn More
                             </a>
                         </div>
+                    </Reveal>
+                    <Reveal keyframes={buttonsAnimations} delay={1750} duration={300} triggerOnce={true}>
                         <div className="downloadPdf" >
                             <a href="%PUBLIC_URL%/CV.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
                         </div>
-                    </div>
-                </Fade>
+                    </Reveal>
+                </div>
             </div>
 
         </div >
