@@ -1,19 +1,4 @@
 import "./technologies.scss";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
-
-
-const textsAnimations = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-`;
 
 export default function Technologies() {
     return (
