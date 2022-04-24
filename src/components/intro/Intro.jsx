@@ -1,5 +1,5 @@
 import "./intro.scss";
-import Reveal, { Fade } from "react-awesome-reveal";
+import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
 const textsAnimations = keyframes`
@@ -32,10 +32,19 @@ const buttonsAnimations = keyframes`
   }
 `;
 
+const sideBarsAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
 export default function Intro() {
     return (
         <div className="intro" id="intro">
-            <Fade delay={2400} triggerOnce={true}>
+            <Reveal keyframes={sideBarsAnimation} delay={2400} duration={500} triggerOnce={true}>
 
                 <div className="icons">
                     <div className="itemContainer">
@@ -58,8 +67,8 @@ export default function Intro() {
                         </a>
                     </div>
                 </div>
-            </Fade>
-            <Fade delay={2400} triggerOnce={true}>
+            </Reveal>
+            <Reveal keyframes={sideBarsAnimation} delay={2400} duration={500} triggerOnce={true}>
 
                 <div className="explore">
                     <div className="text">
@@ -67,7 +76,7 @@ export default function Intro() {
                         <p>EXPLORE</p>
                     </div>
                 </div>
-            </Fade>
+            </Reveal>
             <div className="left">
             </div>
             <div className="right">
@@ -95,7 +104,7 @@ export default function Intro() {
                     </Reveal>
                     <Reveal keyframes={buttonsAnimations} delay={1750} duration={300} triggerOnce={true}>
                         <div className="downloadPdf" >
-                            <a href="%PUBLIC_URL%/CV.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
+                            <a href="../../../public/PDF/CV.pdf" target="_blank">Download CV</a>
                         </div>
                     </Reveal>
                 </div>

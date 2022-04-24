@@ -4,6 +4,20 @@ import { useContext, useRef } from "react";
 import useIntersection from '../useIntersection';
 //import { OpenedProjectContext } from "../../context/OpenedProjectContext";
 import { SelectedProjectContext } from "../../context/SelectedProjectContext";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
+const textsAnimations = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
 
 export default function Portfolio() {
 
@@ -29,8 +43,14 @@ export default function Portfolio() {
                 <span className="big-text">PORTFOLIO</span>
                 <section className="container">
                     <div className="title">
-                        <h2 className="title">My <span>Works</span></h2>
-                        <p className="text">Some of my personal projects and for studies</p>
+                        <Reveal keyframes={textsAnimations} onVisibilityChange={true} triggerOnce={true}>
+
+                            <h2 className="title">My <span>Works</span></h2>
+                        </Reveal>
+                        <Reveal keyframes={textsAnimations} onVisibilityChange={true} triggerOnce={true} delay={200}>
+
+                            <p className="text">Some of my personal projects and for studies</p>
+                        </Reveal>
                     </div>
                     <ul className="project-grid">
                         {featuredPortfolio.map((item) => (
@@ -83,6 +103,7 @@ export default function Portfolio() {
                             </li>
                         ))}
                     </ul>
+
                 </section>
             </div>
         </div >
