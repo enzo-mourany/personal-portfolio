@@ -6,6 +6,7 @@ import useIntersection from '../useIntersection';
 import { SelectedProjectContext } from "../../context/SelectedProjectContext";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+//import { LinkContainer } from 'react-router-bootstrap';
 
 const textsAnimations = keyframes`
   from {

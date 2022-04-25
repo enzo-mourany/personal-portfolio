@@ -104,7 +104,7 @@ export default function Intro() {
                     </Reveal>
                     <Reveal keyframes={buttonsAnimations} delay={1750} duration={300} triggerOnce={true}>
                         <div className="downloadPdf" >
-                            <a href="../../../public/PDF/CV.pdf" target="_blank">Download CV</a>
+                            <a href="/CV.pdf" download="cv-enzo-mourany">Download CV</a>
                         </div>
                     </Reveal>
                 </div>
