@@ -2,11 +2,9 @@ import "./portfolio.scss";
 import { featuredPortfolio } from "../../data";
 import { useContext, useRef } from "react";
 import useIntersection from '../useIntersection';
-//import { OpenedProjectContext } from "../../context/OpenedProjectContext";
 import { SelectedProjectContext } from "../../context/SelectedProjectContext";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-//import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from "react-router-dom";
 
 const textsAnimations = keyframes`
@@ -24,7 +22,6 @@ const textsAnimations = keyframes`
 export default function Portfolio() {
 
     const setSelectedProject = useContext(SelectedProjectContext);
-    //const setOpenedProject = useContext(OpenedProjectContext);
 
     const ref = useRef();
     const inViewport = useIntersection(ref, '0px');
@@ -88,10 +85,12 @@ export default function Portfolio() {
                                             </div>
                                         </div>
                                         <h3 className="project-title">
-                                            <a href="#ProjectPage" onClick={() => setSelectedProject(item.id)}>
-                                                {item.title}
+                                            <a href="#ProjectPage"
+                                                onClick={() => setSelectedProject(item.id)}
+                                            >
+                                                <Link to="/ProjectPage" onClick={console.log(item.id)}>{item.title}</Link>
                                             </a>
-                                            <Link to="/ProjectPage">Intro</Link>
+
                                         </h3>
                                         <div className="project-description">
                                             <p>{item.description}</p>
