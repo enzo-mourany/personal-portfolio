@@ -3,7 +3,7 @@ import "./projectPage.scss";
 import "../portfolio/Portfolio";
 import { featuredPortfolio } from "../../data";
 //import { SelectedProjectContext } from "../../context/SelectedProjectContext";
-
+import { Link } from "react-router-dom";
 
 export default function ProjectPage() {
 
@@ -15,6 +15,7 @@ export default function ProjectPage() {
             <div className="wrapper">
                 <h2>{featuredPortfolio[1].title}</h2>
                 <p>Hello World</p>
+                <Link to="/">Back</Link>
             </div>
         </div>
     )

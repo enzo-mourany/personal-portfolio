@@ -7,6 +7,7 @@ import { SelectedProjectContext } from "../../context/SelectedProjectContext";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 //import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from "react-router-dom";
 
 const textsAnimations = keyframes`
   from {
@@ -90,6 +91,7 @@ export default function Portfolio() {
                                             <a href="#ProjectPage" onClick={() => setSelectedProject(item.id)}>
                                                 {item.title}
                                             </a>
+                                            <Link to="/ProjectPage">Intro</Link>
                                         </h3>
                                         <div className="project-description">
                                             <p>{item.description}</p>

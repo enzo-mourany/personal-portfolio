@@ -1,6 +1,6 @@
 import './app.scss';
 import React, { useState, useEffect, useContext } from 'react';
-//import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages Imports
 import Topbar from "./components/topbar/Topbar";
@@ -10,7 +10,7 @@ import Technologies from "./components/technologies/Technologies";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
-//import ProjectPage from './components/projectPage/ProjectPage';
+import ProjectPage from './components/projectPage/ProjectPage';
 import BarLoader from "react-spinners/BarLoader";
 
 // Context Imports
@@ -62,13 +62,27 @@ function App() {
           <>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <div className="sections">
-              <Intro />
-              <About />
-              <Technologies />
-              <Portfolio />
-              <Contact />
-            </div>
+
+            <BrowserRouter>
+              <Routes>
+                <Route path={"/"} element={
+                  <div className="sections">
+                    <Intro />
+                    <About />
+                    <Technologies />
+                    <Portfolio />
+                    <Contact />
+                  </div>
+                } />
+                <Route path={"/ProjectPage"} element={<ProjectPage />} />
+
+              </Routes>
+
+
+
+            </BrowserRouter>
+
+
           </>
         )}
     </div >
