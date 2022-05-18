@@ -1,12 +1,12 @@
-$mainColor: #0B1829;
+$mainColor: #0b1829;
 $secondaryColor: #112240;
 $textColorDarkMode: #ccd6f6;
-$highlightColor: #43FFD5;
-$green: #25414C;
+$highlightColor: #43ffd5;
+$green: #25414c;
 $itemColor: #8892b0;
 $description: #a8b2d1;
-$decoration: #CB3752;
-$secondaryDecoration: #401A26;
+$decoration: #cb3752;
+$secondaryDecoration: #401a26;
 $width: 768px;
 $titleSize: 34px;
 $titleSizeMobile: 26px;
@@ -14,230 +14,26 @@ $textSize: 22px;
 $textSizeMobile: 16px;
 @mixin mobile {
     @media (max-width: #{$width}) {
-        @content
+        @content;
     }
 }
 
-;
 @mixin laptop1024 {
     @media (max-width: 1024px) {
-        @content
+        @content;
     }
 }
 
-;
 $titleSizeLaptop1024: 100px;
 @mixin mobileL {
     @media (max-width: 425px) {
-        @content
+        @content;
     }
 }
 
-;
 @mixin mobileS {
     @media (max-width: 320px) {
-        @content
-    }
-}
-
-;
-@mixin laptop1300 {
-    @media (max-width: 1300px) {
-        @content
-    }
-}
-
-;
-$titleSizeLaptop1024: 50px;
-// iPhone SE
-@mixin iphoneSE {
-    @media (max-width: 375px) and (max-height: 667px) {
-        @content
-    }
-}
-
-;
-@mixin iphoneSELeaning {
-    @media (max-width: 667px) and (max-height: 375px) {
-        @content
-    }
-}
-
-;
-// iPhone XR
-@mixin iphoneXR {
-    @media (max-width: 414px) and (max-height: 896px) {
-        @content
-    }
-}
-
-;
-@mixin iphoneXRLeaning {
-    @media (max-width: 896px) and (max-height: 414px) {
-        @content
-    }
-}
-
-;
-// iPhone 12 Pro
-@mixin iphone12Pro {
-    @media (max-width: 390px) and (max-height: 844px) {
-        @content
-    }
-}
-
-;
-@mixin iphone12ProLeaning {
-    @media (max-width: 844px) and (max-height: 390px) {
-        @content
-    }
-}
-
-;
-// Samsung Galaxy S8
-@mixin samsungS8 {
-    @media (max-width: 360px) and (max-height: 740px) {
-        @content
-    }
-}
-
-;
-@mixin samsungS8Leaning {
-    @media (max-width: 740px) and (max-height: 360px) {
-        @content
-    }
-}
-
-;
-// Samsung Galaxy S20 Ultra
-@mixin samsungS20Ultra {
-    @media (max-width: 412px) and (max-height: 915px) {
-        @content
-    }
-}
-
-;
-@mixin samsungS20UltraLeaning {
-    @media (max-width: 915px) and (max-height: 412px) {
-        @content
-    }
-}
-
-;
-// iPad Air
-@mixin ipadAir {
-    @media (max-width: 820px) and (max-height: 1180px) {
-        @content
-    }
-}
-
-;
-@mixin ipadAirLeaning {
-    @media (max-width: 1180px) and (max-height: 820px) {
-        @content
-    }
-}
-
-;
-// iPad Mini
-@mixin ipadMini {
-    @media (max-width: 768px) and (max-height: 1024px) {
-        @content
-    }
-}
-
-;
-@mixin ipadMiniLeaning {
-    @media (max-width: 1024px) and (max-height: 768px) {
-        @content
-    }
-}
-
-;
-// Surface Pro 7
-@mixin surfacePro7 {
-    @media (max-width: 912px) and (max-height: 1368px) {
-        @content
-    }
-}
-
-;
-@mixin surfacePro7 {
-    @media (max-width: 1368px) and (max-height: 912px) {
-        @content
-    }
-}
-
-;
-// Surface Duo
-@mixin surfaceDuo {
-    @media (max-width: 540px) and (max-height: 720px) {
-        @content
-    }
-}
-
-;
-@mixin surfaceDuoLeaning {
-    @media (max-width: 720px) and (max-height: 540px) {
-        @content
-    }
-}
-
-;
-@mixin surfaceDuoOpened {
-    @media (max-width: 1114px) and (max-height: 720px) {
-        @content
-    }
-}
-
-;
-@mixin surfaceDuoOpenedLeaning {
-    @media (max-width: 720px) and (max-height: 1114px) {
-        @content
-    }
-}
-
-;
-// Galaxy Fold
-@mixin galaxyFold {
-    @media (max-width: 280px) and (max-height: 653px) {
-        @content
-    }
-}
-
-;
-@mixin galaxyFoldLeaning {
-    @media (max-width: 653px) and (max-height: 280px) {
-        @content
-    }
-}
-
-;
-@mixin galaxyFoldOpened {
-    @media (max-width: 717px) and (max-height: 512px) {
-        @content
-    }
-}
-
-;
-@mixin galaxyFoldOpened {
-    @media (max-width: 512px) and (max-height: 717px) {
-        @content
-    }
-}
-
-;
-// Samsung A51
-@mixin samsungA51 {
-    @media (max-width: 412px) and (max-height: 914px) {
-        @content
-    }
-}
-
-;
-@mixin samsungA51Leaning {
-    @media (max-width: 914px) and (max-height: 412px) {
-        @content
+        @content;
     }
 }
 
